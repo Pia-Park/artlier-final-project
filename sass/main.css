@@ -8,9 +8,26 @@
 body {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 300;
-  font-size: 1.1em;
   color: #201710;
-  padding: 3rem;
+  padding: 0;
+}
+
+body h2 {
+  font-family: "Bodoni Moda", serif;
+  font-size: 2rem;
+}
+
+body .highlight {
+  background-image: linear-gradient(120deg, #fbcfae 0%, #dfc5b2 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 20%;
+  background-position: 0 76%;
+  -webkit-transition: background-size 0.25s ease-in;
+  transition: background-size 0.25s ease-in;
+}
+
+body .highlight:hover {
+  background-size: 100% 50%;
 }
 
 body .nav-bar {
@@ -24,14 +41,22 @@ body .nav-bar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.2rem 2rem 1.2rem 2rem;
+  height: 10vh;
+  width: 100%;
+  background-color: #fff;
 }
 
-body .nav-logo-img {
-  width: 9em;
+body .nav-bar .nav-logo-img {
+  width: 10rem;
   height: auto;
 }
 
-body .main-nav {
+body .nav-bar .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,11 +67,246 @@ body .main-nav {
   list-style: none;
 }
 
+body .nav-bar .nav-link:visited {
+  text-decoration: none;
+  color: #201710;
+}
+
+body .nav-bar .nav-link:hover {
+  color: #fbcfae;
+}
+
 body li {
   padding-left: 1rem;
 }
 
 body a:link {
   text-decoration: none;
+  color: #201710;
+}
+
+body .main {
+  padding: 6rem 3rem 3rem 3rem;
+  background-image: url("file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/main.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 42rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main h1.main-content {
+  color: #fff;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+body .main .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main .search input.search-box {
+  height: 3rem;
+  width: 35rem;
+  border: 1px solid #201710;
+  background: #fff;
+  outline-style: none;
+  padding-left: 1rem;
+}
+
+body .main .search .search-btn {
+  height: 3rem;
+  width: 5rem;
+  border: 0;
+  outline: none;
+  color: #8d7968;
+  background-color: #201710;
+}
+
+body .main .search .search-btn:hover {
+  color: #dfc5b2;
+}
+
+body .about-artlier {
+  padding: 6rem 3rem 3rem 3rem;
+}
+
+body .about-artlier .explain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .about-artlier .explain .explain-art {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 5rem;
+  margin: 2rem;
+}
+
+body .about-artlier .explain .explain-art .art {
+  font-family: "Bodoni Moda", serif;
+  width: 15rem;
+  height: 15rem;
+  line-height: 15rem;
+  border-radius: 50%;
+  background-color: #dfc5b2;
+  text-align: center;
+}
+
+body .about-artlier .explain .explain-art .atelier {
+  font-family: "Bodoni Moda", serif;
+  width: 15rem;
+  height: 15rem;
+  line-height: 15rem;
+  border-radius: 50%;
+  background-color: #dfc5b2;
+  text-align: center;
+}
+
+body .about-artlier .explain .explain-art .plus {
+  padding: 3rem 5rem 3rem 5rem;
+}
+
+body .about-artlier .explain p {
+  width: 35rem;
+  text-align: center;
+}
+
+body .our-artists {
+  padding: 6rem 3rem 3rem 3rem;
+}
+
+body .our-artists .artist {
+  width: 25vw;
+  height: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+body .our-artists .artist .artist-img {
+  width: 25vw;
+  height: 25vw;
+}
+
+body .our-artists .artist .artist-text {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  padding: 2rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+body .our-artists .artist .artist-text p {
+  padding-bottom: 1rem;
+}
+
+body .our-artists .artist .btn-visit {
+  border: 1px solid;
+  padding: 0.5rem;
+  color: #fff;
+  letter-spacing: 0.3rem;
+}
+
+body .our-artists .artist .btn-visit:hover {
+  color: #fbcfae;
+}
+
+body .visit-artlier {
+  padding: 6rem 3rem 3rem 3rem;
+}
+
+body .our-services {
+  padding: 6rem 3rem 3rem 3rem;
+}
+
+body .contact {
+  padding: 6rem 3rem 3rem 3rem;
+}
+
+body .nav-bar-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1.2rem 2rem 1.2rem 2rem;
+  height: 10vh;
+  width: 100%;
+  background-color: #201710;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .nav-bar-footer .nav-logo-img {
+  width: 10rem;
+  height: auto;
+  margin-right: 4rem;
+}
+
+body .nav-bar-footer .main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  color: #fff;
+}
+
+body .nav-bar-footer .nav-link:visited {
+  text-decoration: none;
+  color: #8d7968;
+}
+
+body .nav-bar-footer .nav-link:hover {
+  color: #dfc5b2;
 }
 /*# sourceMappingURL=main.css.map */

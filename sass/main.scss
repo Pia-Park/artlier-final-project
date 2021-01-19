@@ -1,10 +1,18 @@
 $color-primary:#8d7968;
 $color-primary-light: #dfc5b2;
 $color-primary-dark: #201710;
+$color-primary-main: #fbcfae;
 
 $color-grey-dark: #5e5d5d;
 $color-grey: #9c9a98;
 $color-white: #fff;
+
+$padding: 6rem 3rem 3rem 3rem;
+$bodoni: 'Bodoni Moda', serif;
+
+
+
+
 
 *, *::before, *::after{
     margin: 0;
@@ -15,29 +23,230 @@ $color-white: #fff;
 body{
     font-family:  'Noto Sans JP', sans-serif;
     font-weight: 300;
-    font-size: 1.1em;
+    // font-size: 1rem;
     color: $color-primary-dark;
-    padding: 3rem;
+    padding: 0;
+    h2{
+        font-family: $bodoni;
+        font-size: 2rem;
+    }
+    .highlight {
+        background-image: linear-gradient(120deg, $color-primary-main 0%, $color-primary-light 100%);
+        background-repeat: no-repeat;
+        background-size: 100% 20%;
+        background-position: 0 76%;
+        transition: background-size 0.25s ease-in;
+    }
+      .highlight:hover{
+        background-size: 100% 50%;
+    }
     .nav-bar{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-    .nav-logo-img{
-        width: 9em;
-        height: auto;
-    }    
-    .main-nav{
-        display: flex;
-        flex-direction: row;
-        list-style: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 1.2rem 2rem 1.2rem 2rem;
+        height: 10vh;
+        width: 100%;
+        background-color: $color-white;
+        .nav-logo-img{
+            width: 10rem;
+            height: auto;
+        }    
+        .main-nav{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+        .nav-link {
+            &:visited{
+                text-decoration: none;
+                color: $color-primary-dark;
+            }
+            &:hover{
+                color: $color-primary-main;
+            }
+        }
     }
     li {
         padding-left: 1rem;
     }
 
     a:link{
-        text-decoration: none;       
+        text-decoration: none; 
+        color: $color-primary-dark;      
     }
+
+
+    .main {
+        padding: $padding;
+        background-image: url('file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/main.jpg');
+        background-size: cover;
+        display: flex;
+        width: 100%;
+        height: 42rem;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+        h1.main-content{
+            color: #fff;
+            font-family: 'Bodoni Moda', serif;
+            font-weight: 700;
+            font-size: 5rem;
+        }
+        .search {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            input.search-box{
+                height: 3rem;
+                width: 35rem;
+                border: 1px solid $color-primary-dark;
+                background: $color-white;
+                outline-style: none;
+                padding-left: 1rem;
+            }
+            .search-btn{
+                height: 3rem;
+                width: 5rem;
+                border: 0;
+                outline: none;
+                color: $color-primary;
+                background-color: $color-primary-dark;
+                &:hover{
+                    color: $color-primary-light;
+                }
+            }
+
+
+        }
+    }
+
+    .about-artlier{
+        padding: $padding;
+        .explain{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .explain-art{
+                display: flex;
+                flex-direction: row;
+                font-size: 5rem;
+                margin: 2rem;
+                .art{
+                    font-family: $bodoni;
+                    width: 15rem;
+                    height: 15rem;
+                    line-height: 15rem;
+                    border-radius: 50%;
+                    background-color: #dfc5b2;
+                    text-align: center;
+                }
+                .atelier{
+                    font-family: $bodoni;
+                    width: 15rem;
+                    height: 15rem;
+                    line-height: 15rem;
+                    border-radius: 50%;
+                    background-color: #dfc5b2;
+                    text-align: center;
+                }
+                .plus{
+                    padding: 3rem 5rem 3rem 5rem;
+                }
+            }
+            p{
+                width: 35rem;
+                text-align: center;
+            }
+        }
+        
+
+    }
+
+    .our-artists{
+        padding: $padding;
+        .artist{
+            width: 25vw;
+            height: 25vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            position: relative;
+            .artist-img{
+                width: 25vw;
+                height: 25vw;
+            }
+
+            .artist-text{
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                padding: 2rem;
+                color: $color-white;
+                background-color: rgba($color: #000000, $alpha: 0.3);
+                p{
+                    padding-bottom: 1rem;
+                }
+
+            }
+            .btn-visit{
+                border: 1px solid;
+                padding: 0.5rem;
+                color: $color-white;
+                letter-spacing: 0.3rem;
+                &:hover{
+                    color: $color-primary-main;
+                }
+            }
+        }
+    }
+
+    .visit-artlier{
+        padding: $padding;
+    }
+
+    .our-services{
+        padding: $padding;
+    }
+
+    .contact{
+        padding: $padding;
+    }
+
+    .nav-bar-footer{
+        display: flex;
+        flex-direction: row;
+        padding: 1.2rem 2rem 1.2rem 2rem;
+        height: 10vh;
+        width: 100%;
+        background-color: $color-primary-dark;
+        justify-content: space-between;
+        .nav-logo-img{
+            width: 10rem;
+            height: auto;
+            margin-right: 4rem;
+        }    
+        .main-nav{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            color: $color-white;
+        }
+        .nav-link {
+            &:visited{
+                text-decoration: none;
+                color: $color-primary;
+            }
+            &:hover{
+                color: $color-primary-light;
+            }
+        }
+    }
+
 }
 

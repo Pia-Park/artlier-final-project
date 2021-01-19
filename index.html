@@ -6,14 +6,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet"> 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">      
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">   
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,900&family=EB+Garamond&display=swap" rel="stylesheet">    
     </head>
     <body>
         <header>
             <nav>
                 <div class="nav-bar">
                     <div class="nav-logo">
-                        <a href="#main_top">
+                        <a href="#main-top">
                             <img src="img/artlier_logo.png" class="nav-logo-img">
                         </a>
                     </div>
@@ -27,116 +29,123 @@
                     </ul>
                 </div>
             </nav>
-            <div class="main" id="main_top">
-                <div class="main_content">
-                    <img src="" alt="" class="main_bg">
-                    <h1>Visit your Artist's Artlier</h1>
+            <div class="main" id="main-top">
+                <h1 class="main-content">Visit your Artist's Atelier</h1>
+                <div class="search">
+                    <input type="search" class="search-box" placeholder="Search your Artist">
+                    <button class="search-btn">Search</button>
                 </div>
-                <a href="#visit" class="btn btn_big">Visit Artlier</a>
+                <!-- <a href="#visit" class="btn btn_big">Visit Artlier</a> -->
             </div>
         </header>
         
-        <section class="about_artlier" id="about">
-            <div class="about_content">
-                <h2>About Artlier</h2>
-                <h1 class="art">Art</h1>
-                <h1 class="plus">+</h1>
-                <h1 class="atelier">Atelier</h1>
-                <p>Why do you make art? That’s the simple question Greater Good posed to seven artists. Their answers are surprising, and very diverse. They mention making art for fun and adventure; building bridges between themselves and the rest of humanity; reuniting and recording fragments of thought, feeling, and memory; and saying things that they can’t express in any other way.</p>
-            </div>
-        </section>
-
-        <section class="our_artists" id="artists">
-            <h2>Our Artists</h2>
-            <div class="artists_content">
-                <div class="artist">
-                    <img src="" alt="" class="artist_img">
-                    <h3 class="artist_name">Artist name</h3>
-                    <p class="artist_info">He was born in Korea. He likes spicy food.</p>
-                    <a href="#visit" class="btn btn_big">Visit Artlier</a>
+        <section class="about-artlier" id="about">
+            <div class="about-content">
+                <h2> <span class="highlight">About Artlier</span></h2>
+                <div class="explain">
+                    <div class="explain-art">
+                        <h1 class="art">Art</h1>
+                        <h1 class="plus">+</h1>
+                        <h1 class="atelier">Atelier</h1>
+                    </div>
+                    <p>Why do you make art? That’s the simple question Greater Good posed to seven artists. Their answers are surprising, and very diverse. They mention making art for fun and adventure; building bridges between themselves and the rest of humanity; reuniting and recording fragments of thought, feeling, and memory; and saying things that they can’t express in any other way.</p>
                 </div>
             </div>
         </section>
 
-        <section class="visit_artlier" id="visit">
-            <h2>Visit Artlier</h2>
-            <div class="visit_content">
-                <h3 class="visit_title">Choose the artist you want to visit</h3>
+        <section class="our-artists" id="artists">
+            <h2><span class="highlight">Our Artists</span></h2>
+            <div class="artists-content">
+                <div class="artist">     
+                    <img src="img/paint-1500323_1280.jpg" class="artist-img">
+                    <div class="artist-text">
+                        <h3 class="artist-name">Artist name</h3>
+                        <p class="artist-info">He was born in Korea. He likes spicy food.</p>
+                        <a href="#visit" class="btn btn-visit">Visit Artlier</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="visit-artlier" id="visit">
+            <h2><span class="highlight">Visit Artlier</span></h2>
+            <div class="visit-content">
+                <h3 class="visit-title">Choose the artist you want to visit</h3>
 
             </div>
         </section>
 
-        <section class="our_services" id="services">
-            <h2>Our Services</h2>
-            <div class="services_content">
+        <section class="our-services" id="services">
+            <h2><span class="highlight">Our Services</span></h2>
+            <div class="services-content">
                 <div class="service">
-                    <h3 class="service_title">Goho Plan</h3>
-                    <p class="service_info">This plan is blah blah. This plan is blah blah. This plan is blah blah.</p>
-                    <h4 class="service_price">$12.98/month</h4>
-                    <a href="" class="btn service_btn">SIGN IN</a>
+                    <h3 class="service-title">Goho Plan</h3>
+                    <p class="service-info">This plan is blah blah. This plan is blah blah. This plan is blah blah.</p>
+                    <h4 class="service-price">$12.98/month</h4>
+                    <a href="" class="btn service-btn">SIGN IN</a>
                 </div>
             </div>
         </section>
 
         <section class="contact" id="contact">
-            <h2>Contact</h2>
-            <div class="contact_content">
-                <div class="contact_artist">
-                    <div class="contact_input">
-                        <div class="contact_detail">
+            <h2><span class="highlight">Contact</span></h2>
+            <div class="contact-content">
+                <div class="contact-artist">
+                    <div class="contact-input">
+                        <div class="contact-detail">
                             <div class="label">
                                 <label for="name">Name</label>
                             </div>
-                            <div class="label_input">
+                            <div class="label-input">
                                 <input type="text" name="name" id="name" placeholder="Your name" required>
                             </div>
                         </div>
-                        <div class="contact_detail">
+                        <div class="contact-detail">
                             <div class="label">
                                 <label for="email">E-mail</label>
                             </div>
-                            <div class="label_input">
+                            <div class="label-input">
                                 <input type="text" name="email" id="email" placeholder="Your E-mail" required>
                             </div>
                         </div>
-                        <div class="contact_detail">
+                        <div class="contact-detail">
                             <div class="label">
                                 <label for="portfolio">Portfolio</label>
                             </div>
-                            <div class="label_input">
+                            <div class="label-input">
                                 <input type="text" name="portfolio" id="portfolio" placeholder="Your Portfolio URL" required>
                             </div>
                         </div>
                         <div class="submit">
                             <label></label>
                         </div>
-                        <div class="submit_btn">
+                        <div class="submit-btn">
                             <input type="submit" value="SUBMIT">
                         </div>
                     </div>
                 </div>
-                <div class="contact_audience">
-                    <div class="contact_detail">
+                <div class="contact-audience">
+                    <div class="contact-detail">
                         <div class="label">
                             <label for="name">Name</label>
                         </div>
-                        <div class="label_input">
+                        <div class="label-input">
                             <input type="text" name="name" id="name" placeholder="Your name" required>
                         </div>
                     </div>
-                    <div class="contact_detail">
+                    <div class="contact-detail">
                         <div class="label">
                             <label for="email">E-mail</label>
                         </div>
-                        <div class="label_input">
+                        <div class="label-input">
                             <input type="text" name="email" id="email" placeholder="Your E-mail" required>
                         </div>
                     </div>
-                    <div class="contact_detail">
+                    <div class="contact-detail">
                         <div class="label">
                             <label for="find-us">How did you find us?</label>
                         </div>
-                        <div class="label_input">
+                        <div class="label-input">
                             <select name="find-us" id="find-us">
                                 <option value="friend" selected>Friends</option>
                                 <option value="search">Search engine</option>
@@ -148,17 +157,17 @@
                     <div class="submit">
                         <label></label>
                     </div>
-                    <div class="submit_btn">
+                    <div class="submit-btn">
                         <input type="submit" value="SUBMIT">
                     </div>
                 </div>
             </div>
         </section>
         <nav>
-            <div class="nav-bar">
+            <div class="nav-bar-footer">
                 <div class="nav-logo">
-                    <a href="#main_top">
-                        <img src="img/artlier_logo.png" class="nav-logo-img">
+                    <a href="#main-top">
+                        <img src="img/artlier_logo_white.png" class="nav-logo-img">
                     </a>
                 </div>
                 <ul class="main-nav">
