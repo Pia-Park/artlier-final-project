@@ -79,8 +79,7 @@ body{
         background-size: 100% 50%;
     }
     .nav-bar{
-        display: flex;
-        flex-direction: row;
+        @include row;
         justify-content: space-between;
         position: fixed;
         z-index: 2;
@@ -122,11 +121,10 @@ body{
         padding: $padding;
         background-image: $main-bg-img;
         background-size: cover;
-        display: flex;
+        @include column;
         width: 100%;
         height: 42rem;
         justify-content: center;
-        flex-direction: column;
         align-items: center;
         .main-content{
             position: relative;
@@ -148,8 +146,7 @@ body{
             }
         }
         .search {
-            display: flex;
-            flex-direction: row;
+            @include row;
             align-items: center;
             input.search-box{
                 height: 3rem;
@@ -178,14 +175,12 @@ body{
     .about-artlier{
         padding: $padding;
         .explain{
-            display: flex;
-            flex-direction: column;
+            @include column;
             align-items: center;
             .explain-art{
-                display: flex;
-                flex-direction: row;
+                @include row;
+                justify-content: center;
                 font-size: 5rem;
-                margin: 2rem;
                 .art{
                     font-family: $bodoni;
                     width: 15rem;
@@ -207,7 +202,7 @@ body{
                     text-align: center;
                 }
                 .plus{
-                    padding: 3rem 5rem 3rem 5rem;
+                    padding: 3rem 2rem 3rem 2rem;
                 }
             }
             p{
@@ -222,8 +217,7 @@ body{
     .our-artists{
         padding: $padding;
         .artists-content{
-            display: flex;
-            flex-direction: row;
+            @include row;
             width: 100%;
             flex-wrap: wrap;
             justify-content: center;
@@ -265,8 +259,7 @@ body{
                 background-color: $color-primary-dark;
                 position: absolute;
                 bottom: 0;
-                display: flex;
-                flex-direction: column;
+                @include column;
                 justify-content: flex-end;
                 padding: 1rem;
                 p{
@@ -322,8 +315,7 @@ body{
         padding: $padding;
         background-color: $color-primary;
         .services-content{
-            display: flex;
-            flex-direction: row;
+            @include row;
             justify-content: center;
             padding-bottom: 3rem;
             .service{
@@ -365,8 +357,7 @@ body{
     .contact{
         padding: $padding;
         .contact-content{
-            display: flex;
-            flex-direction: row;
+            @include row;
             justify-content: center;
             .contact-audience{
                 .contact-input{
@@ -383,8 +374,7 @@ body{
                     font-size: 3rem;
                 }
                 .contact-detail{
-                    display: flex;
-                    flex-direction: row;
+                    @include row;
                     justify-content: space-between;
                     .label{
                         padding-right: 2rem;
@@ -419,8 +409,7 @@ body{
     }
 
     .nav-bar-footer{
-        display: flex;
-        flex-direction: row;
+        @include row;
         padding: 1.2rem 2rem 5rem 2rem;
         height: 10vh;
         width: 100%;
@@ -432,8 +421,7 @@ body{
             margin-right: 4rem;
         }    
         .main-nav{
-            display: flex;
-            flex-direction: row;
+            @include row;
             list-style: none;
             color: $color-white;
         }
@@ -448,4 +436,8 @@ body{
         }
     }
 
+}
+
+@include respond-to('medium'){
+    background-color: #000000;
 }
