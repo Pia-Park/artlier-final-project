@@ -1,3 +1,5 @@
+@import "./mixin";
+
 $color-primary:#8d7968;
 $color-primary-light: #dfc5b2;
 $color-primary-dark: #201710;
@@ -22,6 +24,29 @@ $contact-bg-img: url('/img/watercolour-4117519_1280.png');
 $contact-bg-img2: url('/img/watercolour-4117519_12801.png');
 $bg-logo: url('/img/artlier_logo_white.png');
 
+@mixin row {
+    display: flex;
+    flex-direction: row;    
+}
+
+@mixin column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+// div {
+//     background: white;
+//     @include respond-to('large') {
+//         background: pink;
+//     }
+//     @include respond-to('medium') {
+//         background: orange;
+//     }
+//     @include respond-to('small') {
+//         background: blue;
+//     }
+// }
 
 
 
@@ -424,4 +449,3 @@ body{
     }
 
 }
-
