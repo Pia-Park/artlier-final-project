@@ -438,6 +438,276 @@ body{
 
 }
 
-@include respond-to('medium'){
-    background-color: #000000;
+body{
+    @include respond-to('medium') {
+        background: orange;
+        font-family:  $notosans;
+        font-weight: 300;
+        position: relative;
+        color: $color-primary-dark;
+        padding: 0;
+        h2{
+            font-family: $bodoni;
+            font-size: 1.5rem;
+            padding-bottom: 2rem;
+        }
+        
+        .main {
+            padding: $padding;
+            background-image: $main-bg-img;
+            background-size: cover;
+            @include column;
+            width: 100%;
+            height: 42rem;
+            justify-content: center;
+            align-items: center;
+            .main-content{
+                position: relative;
+    
+                .main-text{
+                    color: $color-white;
+                    font-family: $bodoni;
+                    font-weight: 700;
+                    font-size: 3.5rem;
+                    line-height: 10rem;
+                    &:hover{
+                        color: rgba($color: #000000, $alpha: 0);
+                        background-image: $bg-logo;
+                        background-size: 70%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+    
+                    }
+                }
+            }
+            .search {
+                @include row;
+                align-items: center;
+                input.search-box{
+                    height: 3rem;
+                    width: 35rem;
+                    border: 1px solid $color-primary-dark;
+                    background: $color-white;
+                    outline-style: none;
+                    padding-left: 1rem;
+                }
+                .search-btn{
+                    height: 3rem;
+                    width: 5rem;
+                    border: 0;
+                    outline: none;
+                    color: $color-primary;
+                    background-color: $color-primary-dark;
+                    &:hover{
+                        color: $color-primary-light;
+                    }
+                }
+    
+    
+            }
+        }
+    
+        .about-artlier{
+            padding: $padding;
+            .explain{
+                @include column;
+                align-items: center;
+                .explain-art{
+                    @include row;
+                    justify-content: center;
+                    font-size: 4rem;
+                    .art{
+                        font-family: $bodoni;
+                        width: 13rem;
+                        height: 13rem;
+                        line-height: 13rem;
+                        border-radius: 50%;
+                        background-image: $about-bg-img;
+                        background-color: $color-primary;
+                        background-size: 95%;
+                        text-align: center;
+                    }
+                    .atelier{
+                        font-family: $bodoni;
+                        width: 13rem;
+                        height: 13rem;
+                        line-height: 13rem;
+                        border-radius: 50%;
+                        background-image: $about-bg-img;
+                        background-size: 70vw;
+                        text-align: center;
+                    }
+                    .plus{
+                        padding: 3rem 2rem 3rem 2rem;
+                    }
+                }
+                p{
+                    width: 35rem;
+                    text-align: center;
+                }
+            }
+            
+    
+        }
+    
+    
+        .visit-artlier{
+            padding: 0;
+            h2{
+                padding: 6rem 3rem 2rem 3rem;
+            }
+            .visit-content{
+                position: relative;
+                width: 100vw;
+                height: 90vh;
+        
+                .visit-img-png{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    cursor: pointer;
+    
+                }
+                .visit-img{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                }
+                &:hover .visit-img-png{
+                    transform: scale(1.4);
+                    transition-duration: 1s;
+                }
+                
+            }
+        }
+    
+        .our-services{
+            padding: $paddin;
+            background-color: $color-primary;
+            .services-content{
+                @include row;
+                justify-content: center;
+                padding-bottom: 1rem;
+                .service{
+                    width: 25vw;
+                    height: auto;
+                    background-color: $color-primary-dark;
+                    color: $color-primary-light;
+                    margin: 1rem;
+                    padding: 2rem;
+                    h3{
+                        font-family: $bodoni;
+                        letter-spacing: $spacing-m;
+                        font-size: 1.5rem;
+                    }
+                    .service-price{
+                        font-weight: 100;
+                        font-size: 1.5rem;
+                        letter-spacing: $spacing-m;
+                        padding: 1rem 0 1rem 0;
+                        color: $color-primary-main;
+                    }
+                    .service-btn{
+                        display: block;
+                        border: 1px solid;
+                        color: $color-primary-light;
+                        padding: 1rem;
+                        margin-top: 1rem;
+                        letter-spacing: $spacing-l;
+                        text-align: center;
+                        &:hover{
+                            color: $color-white;
+                        }
+                    }
+                }
+    
+            }
+        }
+    
+        .contact{
+            padding: $padding;
+            .contact-content{
+                @include row;
+                justify-content: center;
+                .contact-audience{
+                    .contact-input{
+                        background-image: $contact-bg-img2;
+                    }
+                }
+                .contact-input{
+                    padding: 0 2rem 0 2rem;
+                    background-image: $contact-bg-img;
+                    background-size: 25vw;
+                    background-repeat: no-repeat;
+                    h3{
+                        font-family: $bodoni;
+                        font-size: 3rem;
+                    }
+                    .contact-detail{
+                        @include row;
+                        justify-content: space-between;
+                        .label{
+                            padding-right: 1rem;
+                            line-height: 3rem;
+                        }
+                        .label-input{
+                            padding-right: 1rem;
+                            line-height: 3rem;
+                        }
+                    }
+                    input{
+                        width: 14rem;
+                        color: $color-grey-dark;
+                        padding: 0.2rem;
+                    }
+                    input[type=submit]{
+                        width: 91%;
+                        font-size: 1rem;
+                        padding: 0.5rem;
+                        margin-top: 1rem;
+                        background-color: $color-primary-dark;
+                        color: $color-primary;
+                        border: 0;
+                        letter-spacing: $spacing-m;
+                        &:hover{
+                            color: $color-white;
+                        }
+                    }
+    
+                }
+            }
+        }
+    
+        .nav-bar-footer{
+            @include row;
+            padding: 1.2rem 2rem 5rem 2rem;
+            height: 10vh;
+            width: 100%;
+            background-color: $color-primary-dark;
+            justify-content: space-between;
+            .nav-logo-img{
+                width: 10rem;
+                height: auto;
+                margin-right: 4rem;
+            }    
+            .main-nav{
+                @include row;
+                list-style: none;
+                color: $color-white;
+            }
+            .nav-link {
+                &:visited{
+                    text-decoration: none;
+                    color: $color-primary;
+                }
+                &:hover{
+                    color: $color-primary-light;
+                }
+            }
+        }
+    }
+
+
 }
