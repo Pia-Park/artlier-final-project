@@ -87,8 +87,8 @@ body a:link {
 }
 
 body .main {
-  padding: 6rem 3rem 3rem 3rem;
-  background-image: url("file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/main.jpg");
+  padding: 6rem 3rem 6rem 3rem;
+  background-image: url("/img/main.jpg");
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,17 +107,24 @@ body .main {
           align-items: center;
 }
 
-body .main .main-logo {
-  opacity: 0;
-  width: 0;
-  height: 0;
+body .main .main-content {
+  position: relative;
 }
 
-body .main h1.main-content {
+body .main .main-content .main-text {
   color: #fff;
   font-family: "Bodoni Moda", serif;
   font-weight: 700;
   font-size: 5rem;
+  line-height: 10rem;
+}
+
+body .main .main-content .main-text:hover {
+  color: rgba(0, 0, 0, 0);
+  background-image: url("file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/artlier_logo_white.png");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 body .main .search {
@@ -156,7 +163,7 @@ body .main .search .search-btn:hover {
 }
 
 body .about-artlier {
-  padding: 6rem 3rem 3rem 3rem;
+  padding: 6rem 3rem 6rem 3rem;
 }
 
 body .about-artlier .explain {
@@ -216,7 +223,7 @@ body .about-artlier .explain p {
 }
 
 body .our-artists {
-  padding: 6rem 3rem 3rem 3rem;
+  padding: 6rem 3rem 6rem 3rem;
 }
 
 body .our-artists .artists-content {
@@ -308,7 +315,7 @@ body .visit-artlier {
 }
 
 body .visit-artlier h2 {
-  padding: 6rem 3rem 3rem 3rem;
+  padding: 6rem 3rem 6rem 3rem;
 }
 
 body .visit-artlier .visit-content {
@@ -340,7 +347,7 @@ body .visit-artlier .visit-content:hover .visit-img-png {
 }
 
 body .our-services {
-  padding: 6rem 3rem 3rem 3rem;
+  padding: 6rem 3rem 6rem 3rem;
   background-color: #8d7968;
 }
 
@@ -360,7 +367,7 @@ body .our-services .services-content {
 
 body .our-services .services-content .service {
   width: 25vw;
-  height: 50vh;
+  height: auto;
   background-color: #201710;
   color: #dfc5b2;
   margin: 1rem;
@@ -396,7 +403,7 @@ body .our-services .services-content .service .service-btn:hover {
 }
 
 body .contact {
-  padding: 6rem 3rem 3rem 3rem;
+  padding: 6rem 3rem 6rem 3rem;
 }
 
 body .contact .contact-content {
@@ -480,7 +487,7 @@ body .nav-bar-footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 1.2rem 2rem 1.2rem 2rem;
+  padding: 1.2rem 2rem 5rem 2rem;
   height: 10vh;
   width: 100%;
   background-color: #201710;

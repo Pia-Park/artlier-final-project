@@ -8,7 +8,7 @@ $color-grey: #9c9a98;
 $color-white: #fff;
 $color-black: #0000;
 
-$padding: 6rem 3rem 3rem 3rem;
+$padding: 6rem 3rem 6rem 3rem;
 $bodoni: 'Bodoni Moda', serif;
 $notosans: 'Noto Sans JP', sans-serif;
 
@@ -16,11 +16,11 @@ $spacing-l:0.3rem;
 $spacing-m: 0.2rem;
 $spacing-s: 0.1rem;
 
-$main-bg-img: url('file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/main.jpg');
+$main-bg-img: url('/img/main.jpg');
 $about-bg-img: url('file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/abstract-3288639_1920.jpg');
 $contact-bg-img: url('file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/watercolour-4117519_1280.png');
 $contact-bg-img2: url('file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/watercolour-4117519_12801.png');
-
+$bg-logo: url('file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/artlier_logo_white.png');
 
 
 
@@ -103,16 +103,24 @@ body{
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        .main-logo{
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-        h1.main-content{
-            color: #fff;
-            font-family: $bodoni;
-            font-weight: 700;
-            font-size: 5rem;
+        .main-content{
+            position: relative;
+
+            .main-text{
+                color: $color-white;
+                font-family: $bodoni;
+                font-weight: 700;
+                font-size: 5rem;
+                line-height: 10rem;
+                &:hover{
+                    color: rgba($color: #000000, $alpha: 0);
+                    background-image: $bg-logo;
+                    background-size: 70%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+
+                }
+            }
         }
         .search {
             display: flex;
@@ -295,7 +303,7 @@ body{
             padding-bottom: 3rem;
             .service{
                 width: 25vw;
-                height: 50vh;
+                height: auto;
                 background-color: $color-primary-dark;
                 color: $color-primary-light;
                 margin: 1rem;
@@ -388,7 +396,7 @@ body{
     .nav-bar-footer{
         display: flex;
         flex-direction: row;
-        padding: 1.2rem 2rem 1.2rem 2rem;
+        padding: 1.2rem 2rem 5rem 2rem;
         height: 10vh;
         width: 100%;
         background-color: $color-primary-dark;
