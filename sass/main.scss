@@ -438,9 +438,10 @@ body{
 
 }
 
+
 body{
     @include respond-to('medium') {
-        background: orange;
+        background: pink;
         font-family:  $notosans;
         font-weight: 300;
         position: relative;
@@ -649,16 +650,16 @@ body{
                         @include row;
                         justify-content: space-between;
                         .label{
-                            padding-right: 1rem;
+                            padding-right: 0rem;
                             line-height: 3rem;
                         }
                         .label-input{
-                            padding-right: 1rem;
+                            padding-right: 0rem;
                             line-height: 3rem;
                         }
                     }
                     input{
-                        width: 14rem;
+                        width: 8rem;
                         color: $color-grey-dark;
                         padding: 0.2rem;
                     }
