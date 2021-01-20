@@ -381,7 +381,7 @@ body{
                         line-height: 3rem;
                     }
                     .label-input{
-                        padding-right: 2rem;
+                        padding-right: 0rem;
                         line-height: 3rem;
                     }
                 }
@@ -391,7 +391,7 @@ body{
                     padding: 0.2rem;
                 }
                 input[type=submit]{
-                    width: 91%;
+                    width: 100%;
                     font-size: 1rem;
                     padding: 0.5rem;
                     margin-top: 1rem;
@@ -442,11 +442,6 @@ body{
 body{
     @include respond-to('medium') {
         background: pink;
-        font-family:  $notosans;
-        font-weight: 300;
-        position: relative;
-        color: $color-primary-dark;
-        padding: 0;
         h2{
             font-family: $bodoni;
             font-size: 1.5rem;
@@ -585,7 +580,7 @@ body{
         }
     
         .our-services{
-            padding: $paddin;
+            padding: $padding;
             background-color: $color-primary;
             .services-content{
                 @include row;
@@ -605,7 +600,7 @@ body{
                     }
                     .service-price{
                         font-weight: 100;
-                        font-size: 1.5rem;
+                        font-size: 1.2rem;
                         letter-spacing: $spacing-m;
                         padding: 1rem 0 1rem 0;
                         color: $color-primary-main;
@@ -650,7 +645,7 @@ body{
                         @include row;
                         justify-content: space-between;
                         .label{
-                            padding-right: 0rem;
+                            padding-right: 1rem;
                             line-height: 3rem;
                         }
                         .label-input{
@@ -659,12 +654,207 @@ body{
                         }
                     }
                     input{
-                        width: 8rem;
+                        width: 12rem;
                         color: $color-grey-dark;
                         padding: 0.2rem;
                     }
                     input[type=submit]{
-                        width: 91%;
+                        width: 100%;
+                        font-size: 1rem;
+                        padding: 0.5rem;
+                        margin-top: 1rem;
+                        background-color: $color-primary-dark;
+                        color: $color-primary;
+                        border: 0;
+                        letter-spacing: $spacing-m;
+                        &:hover{
+                            color: $color-white;
+                        }
+                    }
+    
+                }
+            }
+        }
+    
+        .nav-bar-footer{
+            @include row;
+            padding: 1.2rem 2rem 5rem 2rem;
+            height: 10vh;
+            width: 100%;
+            background-color: $color-primary-dark;
+            justify-content: space-between;
+            .nav-logo-img{
+                width: 10rem;
+                height: auto;
+                margin-right: 4rem;
+            }    
+            .main-nav{
+                @include row;
+                list-style: none;
+                color: $color-white;
+            }
+            .nav-link {
+                &:visited{
+                    text-decoration: none;
+                    color: $color-primary;
+                }
+                &:hover{
+                    color: $color-primary-light;
+                }
+            }
+        }
+    }
+
+
+}
+
+body{
+    @include respond-to('smedium') {
+        background: yellow;
+        .nav-bar{
+            @include row;
+            justify-content: space-between;
+            position: fixed;
+            z-index: 2;
+            top: 0;
+            height: 14vh;
+            width: 100%;
+            background-color: $color-white;  
+            .nav-link {
+                &:visited{
+                    text-decoration: none;
+                    color: $color-primary-dark;
+                }
+                &:hover{
+                    color: $color-primary-main;
+                }
+            }
+        }
+        li {
+            font-size: 1.1rem;
+            padding-left: 0.7rem;
+        }
+    
+
+        .main {
+            height: 32rem;
+            .main-content{
+                position: relative;
+                
+            }
+        }
+    
+        .about-artlier{
+            padding: $padding;
+            .explain{
+                @include column;
+                align-items: center;
+                .explain-art{
+                    margin-left: -6rem;
+                    font-size: 3.5rem;
+                    .art{
+                        width: 11rem;
+                        height: 11rem;
+                        line-height: 11rem;
+                    }
+                    .atelier{
+                        width: 11rem;
+                        height: 11rem;
+                        line-height: 11rem;
+                    }
+                    .plus{
+                        padding: 2rem 1rem 2rem 1rem;
+                    }
+                }
+                p{
+                    width: 35rem;
+                    text-align: center;
+                }
+            }
+            
+    
+        }
+    
+    
+        .our-services{
+            .services-content{
+                @include row;
+                justify-content: center;
+                padding-bottom: 0rem;
+                .service{
+                    width: 27vw;
+                    height: auto;
+                    background-color: $color-primary-dark;
+                    color: $color-primary-light;
+                    margin: 1rem;
+                    padding: 1.8rem;
+                    h3{
+                        font-family: $bodoni;
+                        letter-spacing: $spacing-m;
+                        font-size: 1.5rem;
+                    }
+                    .service-price{
+                        font-weight: 100;
+                        font-size: 1.2rem;
+                        letter-spacing: $spacing-m;
+                        padding: 1rem 0 1rem 0;
+                        color: $color-primary-main;
+                    }
+                    .service-btn{
+                        display: block;
+                        border: 1px solid;
+                        color: $color-primary-light;
+                        padding: 1rem;
+                        margin-top: 1rem;
+                        letter-spacing: $spacing-l;
+                        text-align: center;
+                        &:hover{
+                            color: $color-white;
+                        }
+                    }
+                }
+    
+            }
+        }
+    
+        .contact{
+            padding: $padding;
+            .contact-content{
+                @include row;
+                justify-content: center;
+                .contact-audience{
+                    .contact-input{
+                        background-image: $contact-bg-img2;
+                    }
+                }
+                .contact-input{
+                    padding: 0 2rem 0 2rem;
+                    background-image: $contact-bg-img;
+                    background-size: 25vw;
+                    background-repeat: no-repeat;
+                    h3{
+                        font-family: $bodoni;
+                        font-size: 3rem;
+                    }
+                    .contact-detail{
+                        @include row;
+                        justify-content: space-between;
+                        .label{
+                            padding-right: 1rem;
+                            line-height: 3rem;
+                        }
+                        .label-input{
+                            padding-right: 0rem;
+                            line-height: 3rem;
+                        }
+                    }
+                    input{
+                        width: 12rem;
+                        color: $color-grey-dark;
+                        padding: 0.2rem;
+                    }
+                    input[type=submit]{
+                        width: 100%;
                         font-size: 1rem;
                         padding: 0.5rem;
                         margin-top: 1rem;

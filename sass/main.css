@@ -456,7 +456,7 @@ body .contact .contact-content .contact-input .contact-detail .label {
 }
 
 body .contact .contact-content .contact-input .contact-detail .label-input {
-  padding-right: 2rem;
+  padding-right: 0rem;
   line-height: 3rem;
 }
 
@@ -467,7 +467,7 @@ body .contact .contact-content .contact-input input {
 }
 
 body .contact .contact-content .contact-input input[type=submit] {
-  width: 91%;
+  width: 100%;
   font-size: 1rem;
   padding: 0.5rem;
   margin-top: 1rem;
@@ -525,14 +525,9 @@ body .nav-bar-footer .nav-link:hover {
   color: #dfc5b2;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   body {
-    background: orange;
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 300;
-    position: relative;
-    color: #201710;
-    padding: 0;
+    background: pink;
   }
   body h2 {
     font-family: "Bodoni Moda", serif;
@@ -708,7 +703,7 @@ body .nav-bar-footer .nav-link:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
   }
   body .our-services .services-content .service {
     width: 25vw;
@@ -721,11 +716,11 @@ body .nav-bar-footer .nav-link:hover {
   body .our-services .services-content .service h3 {
     font-family: "Bodoni Moda", serif;
     letter-spacing: 0.2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   body .our-services .services-content .service .service-price {
     font-weight: 100;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     letter-spacing: 0.2rem;
     padding: 1rem 0 1rem 0;
     color: #fbcfae;
@@ -761,7 +756,7 @@ body .nav-bar-footer .nav-link:hover {
     background-image: url("/img/watercolour-4117519_12801.png");
   }
   body .contact .contact-content .contact-input {
-    padding: 0 4rem 0 4rem;
+    padding: 0 2rem 0 2rem;
     background-image: url("/img/watercolour-4117519_1280.png");
     background-size: 25vw;
     background-repeat: no-repeat;
@@ -783,20 +778,247 @@ body .nav-bar-footer .nav-link:hover {
             justify-content: space-between;
   }
   body .contact .contact-content .contact-input .contact-detail .label {
-    padding-right: 2rem;
+    padding-right: 1rem;
     line-height: 3rem;
   }
   body .contact .contact-content .contact-input .contact-detail .label-input {
-    padding-right: 2rem;
+    padding-right: 0rem;
     line-height: 3rem;
   }
   body .contact .contact-content .contact-input input {
-    width: 14rem;
+    width: 12rem;
     color: #5e5d5d;
     padding: 0.2rem;
   }
   body .contact .contact-content .contact-input input[type=submit] {
-    width: 91%;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background-color: #201710;
+    color: #8d7968;
+    border: 0;
+    letter-spacing: 0.2rem;
+  }
+  body .contact .contact-content .contact-input input[type=submit]:hover {
+    color: #fff;
+  }
+  body .nav-bar-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 1.2rem 2rem 5rem 2rem;
+    height: 10vh;
+    width: 100%;
+    background-color: #201710;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .nav-bar-footer .nav-logo-img {
+    width: 10rem;
+    height: auto;
+    margin-right: 4rem;
+  }
+  body .nav-bar-footer .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    list-style: none;
+    color: #fff;
+  }
+  body .nav-bar-footer .nav-link:visited {
+    text-decoration: none;
+    color: #8d7968;
+  }
+  body .nav-bar-footer .nav-link:hover {
+    color: #dfc5b2;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    background: yellow;
+  }
+  body .nav-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    height: 14vh;
+    width: 100%;
+    background-color: #fff;
+  }
+  body .nav-bar .nav-link:visited {
+    text-decoration: none;
+    color: #201710;
+  }
+  body .nav-bar .nav-link:hover {
+    color: #fbcfae;
+  }
+  body li {
+    font-size: 1.1rem;
+    padding-left: 0.7rem;
+  }
+  body .main {
+    height: 32rem;
+  }
+  body .main .main-content {
+    position: relative;
+  }
+  body .about-artlier {
+    padding: 6rem 3rem 6rem 3rem;
+  }
+  body .about-artlier .explain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .about-artlier .explain .explain-art {
+    margin-left: -6rem;
+    font-size: 3.5rem;
+  }
+  body .about-artlier .explain .explain-art .art {
+    width: 11rem;
+    height: 11rem;
+    line-height: 11rem;
+  }
+  body .about-artlier .explain .explain-art .atelier {
+    width: 11rem;
+    height: 11rem;
+    line-height: 11rem;
+  }
+  body .about-artlier .explain .explain-art .plus {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+  body .about-artlier .explain p {
+    width: 35rem;
+    text-align: center;
+  }
+  body .our-services .services-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 0rem;
+  }
+  body .our-services .services-content .service {
+    width: 27vw;
+    height: auto;
+    background-color: #201710;
+    color: #dfc5b2;
+    margin: 1rem;
+    padding: 1.8rem;
+  }
+  body .our-services .services-content .service h3 {
+    font-family: "Bodoni Moda", serif;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+  }
+  body .our-services .services-content .service .service-price {
+    font-weight: 100;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    padding: 1rem 0 1rem 0;
+    color: #fbcfae;
+  }
+  body .our-services .services-content .service .service-btn {
+    display: block;
+    border: 1px solid;
+    color: #dfc5b2;
+    padding: 1rem;
+    margin-top: 1rem;
+    letter-spacing: 0.3rem;
+    text-align: center;
+  }
+  body .our-services .services-content .service .service-btn:hover {
+    color: #fff;
+  }
+  body .contact {
+    padding: 6rem 3rem 6rem 3rem;
+  }
+  body .contact .contact-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .contact .contact-content .contact-audience .contact-input {
+    background-image: url("/img/watercolour-4117519_12801.png");
+  }
+  body .contact .contact-content .contact-input {
+    padding: 0 2rem 0 2rem;
+    background-image: url("/img/watercolour-4117519_1280.png");
+    background-size: 25vw;
+    background-repeat: no-repeat;
+  }
+  body .contact .contact-content .contact-input h3 {
+    font-family: "Bodoni Moda", serif;
+    font-size: 3rem;
+  }
+  body .contact .contact-content .contact-input .contact-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .contact .contact-content .contact-input .contact-detail .label {
+    padding-right: 1rem;
+    line-height: 3rem;
+  }
+  body .contact .contact-content .contact-input .contact-detail .label-input {
+    padding-right: 0rem;
+    line-height: 3rem;
+  }
+  body .contact .contact-content .contact-input input {
+    width: 12rem;
+    color: #5e5d5d;
+    padding: 0.2rem;
+  }
+  body .contact .contact-content .contact-input input[type=submit] {
+    width: 100%;
     font-size: 1rem;
     padding: 0.5rem;
     margin-top: 1rem;
