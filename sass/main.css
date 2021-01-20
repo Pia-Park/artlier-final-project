@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: 300;
   position: relative;
   color: #201710;
@@ -107,9 +107,15 @@ body .main {
           align-items: center;
 }
 
+body .main .main-logo {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
 body .main h1.main-content {
   color: #fff;
-  font-family: 'Bodoni Moda', serif;
+  font-family: "Bodoni Moda", serif;
   font-weight: 700;
   font-size: 5rem;
 }
@@ -184,7 +190,8 @@ body .about-artlier .explain .explain-art .art {
   height: 15rem;
   line-height: 15rem;
   border-radius: 50%;
-  background-color: #dfc5b2;
+  background-image: url("file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/abstract-3288639_1920.jpg");
+  background-size: 95%;
   text-align: center;
 }
 
@@ -194,7 +201,8 @@ body .about-artlier .explain .explain-art .atelier {
   height: 15rem;
   line-height: 15rem;
   border-radius: 50%;
-  background-color: #dfc5b2;
+  background-image: url("file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/abstract-3288639_1920.jpg");
+  background-size: 70vw;
   text-align: center;
 }
 
@@ -327,6 +335,8 @@ body .visit-artlier .visit-content .visit-img {
 body .visit-artlier .visit-content:hover .visit-img-png {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 body .our-services {
@@ -350,7 +360,7 @@ body .our-services .services-content {
 
 body .our-services .services-content .service {
   width: 25vw;
-  height: 45vh;
+  height: 50vh;
   background-color: #201710;
   color: #dfc5b2;
   margin: 1rem;
@@ -400,7 +410,66 @@ body .contact .contact-content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 2rem 0 2rem;
+}
+
+body .contact .contact-content .contact-audience .contact-input {
+  background-image: url("file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/watercolour-4117519_12801.png");
+}
+
+body .contact .contact-content .contact-input {
+  padding: 0 4rem 0 4rem;
+  background-image: url("file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/watercolour-4117519_1280.png");
+  background-size: 25vw;
+  background-repeat: no-repeat;
+}
+
+body .contact .contact-content .contact-input h3 {
+  font-family: "Bodoni Moda", serif;
+  font-size: 3rem;
+}
+
+body .contact .contact-content .contact-input .contact-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .contact .contact-content .contact-input .contact-detail .label {
+  padding-right: 2rem;
+  line-height: 3rem;
+}
+
+body .contact .contact-content .contact-input .contact-detail .label-input {
+  padding-right: 2rem;
+  line-height: 3rem;
+}
+
+body .contact .contact-content .contact-input input {
+  width: 14rem;
+  color: #5e5d5d;
+  padding: 0.2rem;
+}
+
+body .contact .contact-content .contact-input input[type=submit] {
+  width: 91%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: #201710;
+  color: #8d7968;
+  border: 0;
+  letter-spacing: 0.2rem;
+}
+
+body .contact .contact-content .contact-input input[type=submit]:hover {
+  color: #fff;
 }
 
 body .nav-bar-footer {

@@ -6,9 +6,21 @@ $color-primary-main: #fbcfae;
 $color-grey-dark: #5e5d5d;
 $color-grey: #9c9a98;
 $color-white: #fff;
+$color-black: #0000;
 
 $padding: 6rem 3rem 3rem 3rem;
 $bodoni: 'Bodoni Moda', serif;
+$notosans: 'Noto Sans JP', sans-serif;
+
+$spacing-l:0.3rem;
+$spacing-m: 0.2rem;
+$spacing-s: 0.1rem;
+
+$main-bg-img: url('file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/main.jpg');
+$about-bg-img: url('file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/abstract-3288639_1920.jpg');
+$contact-bg-img: url('file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/watercolour-4117519_1280.png');
+$contact-bg-img2: url('file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/watercolour-4117519_12801.png');
+
 
 
 
@@ -21,7 +33,7 @@ $bodoni: 'Bodoni Moda', serif;
 }
 
 body{
-    font-family:  'Noto Sans JP', sans-serif;
+    font-family:  $notosans;
     font-weight: 300;
     position: relative;
     color: $color-primary-dark;
@@ -83,7 +95,7 @@ body{
 
     .main {
         padding: $padding;
-        background-image: url('file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/main.jpg');
+        background-image: $main-bg-img;
         background-size: cover;
         display: flex;
         width: 100%;
@@ -91,10 +103,14 @@ body{
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        
+        .main-logo{
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
         h1.main-content{
             color: #fff;
-            font-family: 'Bodoni Moda', serif;
+            font-family: $bodoni;
             font-weight: 700;
             font-size: 5rem;
         }
@@ -143,7 +159,8 @@ body{
                     height: 15rem;
                     line-height: 15rem;
                     border-radius: 50%;
-                    background-color: #dfc5b2;
+                    background-image: $about-bg-img;
+                    background-size: 95%;
                     text-align: center;
                 }
                 .atelier{
@@ -152,7 +169,8 @@ body{
                     height: 15rem;
                     line-height: 15rem;
                     border-radius: 50%;
-                    background-color: #dfc5b2;
+                    background-image: $about-bg-img;
+                    background-size: 70vw;
                     text-align: center;
                 }
                 .plus{
@@ -225,7 +243,7 @@ body{
                     border: 1px solid;
                     padding: 0.5rem;
                     color: $color-white;
-                    letter-spacing: 0.3rem;
+                    letter-spacing: $spacing-l;
                     &:hover{
                         color: $color-primary-main;
                     }
@@ -261,6 +279,7 @@ body{
             }
             &:hover .visit-img-png{
                 transform: scale(1.4);
+                transition-duration: 1s;
             }
             
         }
@@ -276,20 +295,20 @@ body{
             padding-bottom: 3rem;
             .service{
                 width: 25vw;
-                height: 45vh;
+                height: 50vh;
                 background-color: $color-primary-dark;
                 color: $color-primary-light;
                 margin: 1rem;
                 padding: 2rem;
                 h3{
                     font-family: $bodoni;
-                    letter-spacing: 0.2rem;
+                    letter-spacing: $spacing-m;
                     font-size: 2rem;
                 }
                 .service-price{
                     font-weight: 100;
                     font-size: 1.5rem;
-                    letter-spacing: 0.2rem;
+                    letter-spacing: $spacing-m;
                     padding: 1rem 0 1rem 0;
                     color: $color-primary-main;
                 }
@@ -299,7 +318,7 @@ body{
                     color: $color-primary-light;
                     padding: 1rem;
                     margin-top: 1rem;
-                    letter-spacing: 0.3rem;
+                    letter-spacing: $spacing-l;
                     text-align: center;
                     &:hover{
                         color: $color-white;
@@ -316,7 +335,53 @@ body{
             display: flex;
             flex-direction: row;
             justify-content: center;
-            padding:0 2rem 0 2rem ;
+            .contact-audience{
+                .contact-input{
+                    background-image: $contact-bg-img2;
+                }
+            }
+            .contact-input{
+                padding: 0 4rem 0 4rem;
+                background-image: $contact-bg-img;
+                background-size: 25vw;
+                background-repeat: no-repeat;
+                h3{
+                    font-family: $bodoni;
+                    font-size: 3rem;
+                }
+                .contact-detail{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .label{
+                        padding-right: 2rem;
+                        line-height: 3rem;
+                    }
+                    .label-input{
+                        padding-right: 2rem;
+                        line-height: 3rem;
+                    }
+                }
+                input{
+                    width: 14rem;
+                    color: $color-grey-dark;
+                    padding: 0.2rem;
+                }
+                input[type=submit]{
+                    width: 91%;
+                    font-size: 1rem;
+                    padding: 0.5rem;
+                    margin-top: 1rem;
+                    background-color: $color-primary-dark;
+                    color: $color-primary;
+                    border: 0;
+                    letter-spacing: $spacing-m;
+                    &:hover{
+                        color: $color-white;
+                    }
+                }
+
+            }
         }
     }
 

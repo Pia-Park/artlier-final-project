@@ -30,7 +30,8 @@
                 </div>
             </nav>
             <div class="main" id="main-top">
-                <h1 class="main-content">Visit your Artist's Atelier</h1>
+                <div class="main-logo"><img src="img/artlier_logo.png"></div>
+                <h1 class="main-content">Visit Your Artist's Atelier</h1>
                 <div class="search">
                     <input type="search" class="search-box" placeholder="Search your Artist">
                     <button class="search-btn">Search</button>
@@ -177,8 +178,8 @@
             <h2><span class="highlight">Contact</span></h2>
             <div class="contact-content">
                 <div class="contact-artist">
-                    <div class="contact-artist-title"><h3>for Artist</h3></div>
                     <div class="contact-input">
+                        <div class="contact-artist-title"><h3>for Artist</h3></div>
                         <div class="contact-detail">
                             <div class="label">
                                 <label for="name">Name</label>
@@ -212,43 +213,45 @@
                     </div>
                 </div>
                 <div class="contact-audience">
-                    <div class="contact-audience-title">
-                        <h3>for Audience</h3>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="label">
-                            <label for="name">Name</label>
+                    <div class="contact-input">
+                        <div class="contact-audience-title">
+                            <h3>for Audience</h3>
                         </div>
-                        <div class="label-input">
-                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        <div class="contact-detail">
+                            <div class="label">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="label-input">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="label">
-                            <label for="email">E-mail</label>
+                        <div class="contact-detail">
+                            <div class="label">
+                                <label for="email">E-mail</label>
+                            </div>
+                            <div class="label-input">
+                                <input type="text" name="email" id="email" placeholder="Your E-mail" required>
+                            </div>
                         </div>
-                        <div class="label-input">
-                            <input type="text" name="email" id="email" placeholder="Your E-mail" required>
+                        <div class="contact-detail">
+                            <div class="label">
+                                <label for="find-us">How did you find us?</label>
+                            </div>
+                            <div class="label-input">
+                                <select name="find-us" id="find-us">
+                                    <option value="friend" selected>Friends</option>
+                                    <option value="search">Search engine</option>
+                                    <option value="ad">Advertisement</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="label">
-                            <label for="find-us">How did you find us?</label>
+                        <div class="submit">
+                            <label></label>
                         </div>
-                        <div class="label-input">
-                            <select name="find-us" id="find-us">
-                                <option value="friend" selected>Friends</option>
-                                <option value="search">Search engine</option>
-                                <option value="ad">Advertisement</option>
-                                <option value="other">Other</option>
-                            </select>
+                        <div class="submit-btn">
+                            <input type="submit" value="SUBMIT">
                         </div>
-                    </div>
-                    <div class="submit">
-                        <label></label>
-                    </div>
-                    <div class="submit-btn">
-                        <input type="submit" value="SUBMIT">
                     </div>
                 </div>
             </div>
