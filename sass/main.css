@@ -121,7 +121,7 @@ body .main .main-content .main-text {
 
 body .main .main-content .main-text:hover {
   color: rgba(0, 0, 0, 0);
-  background-image: url("file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/artlier_logo_white.png");
+  background-image: url("/img/artlier_logo_white.png");
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
@@ -197,7 +197,7 @@ body .about-artlier .explain .explain-art .art {
   height: 15rem;
   line-height: 15rem;
   border-radius: 50%;
-  background-image: url("file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/abstract-3288639_1920.jpg");
+  background-image: url("/img/abstract-3288639_1920.jpg");
   background-size: 95%;
   text-align: center;
 }
@@ -208,7 +208,7 @@ body .about-artlier .explain .explain-art .atelier {
   height: 15rem;
   line-height: 15rem;
   border-radius: 50%;
-  background-image: url("file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/abstract-3288639_1920.jpg");
+  background-image: url("/img/abstract-3288639_1920.jpg");
   background-size: 70vw;
   text-align: center;
 }
@@ -420,12 +420,12 @@ body .contact .contact-content {
 }
 
 body .contact .contact-content .contact-audience .contact-input {
-  background-image: url("file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/watercolour-4117519_12801.png");
+  background-image: url("/img/watercolour-4117519_12801.png");
 }
 
 body .contact .contact-content .contact-input {
   padding: 0 4rem 0 4rem;
-  background-image: url("file:///Users/inae1park/WMAD2020/Project/artlier-finalproject/img/watercolour-4117519_1280.png");
+  background-image: url("/img/watercolour-4117519_1280.png");
   background-size: 25vw;
   background-repeat: no-repeat;
 }
