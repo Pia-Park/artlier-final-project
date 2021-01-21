@@ -11,6 +11,7 @@ $color-white: #fff;
 $color-black: #0000;
 
 $padding: 6rem 3rem 6rem 3rem;
+$padding-s: 3rem 1rem 3rem 1rem; 
 $bodoni: 'Bodoni Moda', serif;
 $notosans: 'Noto Sans JP', sans-serif;
 
@@ -33,21 +34,6 @@ $bg-logo: url('/img/artlier_logo_white.png');
     display: flex;
     flex-direction: column;
 }
-
-
-// div {
-//     background: white;
-//     @include respond-to('large') {
-//         background: pink;
-//     }
-//     @include respond-to('medium') {
-//         background: orange;
-//     }
-//     @include respond-to('small') {
-//         background: blue;
-//     }
-// }
-
 
 
 
@@ -74,9 +60,9 @@ body{
         background-size: 100% 20%;
         background-position: 0 76%;
         transition: background-size 0.25s ease-in;
-    }
-      .highlight:hover{
-        background-size: 100% 50%;
+        &:hover{
+            background-size: 100% 50%;
+        }
     }
     .nav-bar{
         @include row;
@@ -88,13 +74,15 @@ body{
         height: 10vh;
         width: 100%;
         background-color: $color-white;
+        .nav-menu{
+            font-size: 0;
+        }
         .nav-logo-img{
             width: 10rem;
             height: auto;
         }    
         .main-nav{
-            display: flex;
-            flex-direction: row;
+            @include row;
             list-style: none;
         }
         .nav-link {
@@ -150,7 +138,7 @@ body{
             align-items: center;
             input.search-box{
                 height: 3rem;
-                width: 35rem;
+                width: 40vw;
                 border: 1px solid $color-primary-dark;
                 background: $color-white;
                 outline-style: none;
@@ -443,12 +431,12 @@ body{
 
 body{
     @include respond-to('medium') {
-        background: pink;
         h2{
             font-family: $bodoni;
             font-size: 1.5rem;
             padding-bottom: 2rem;
         }
+
         
         .main {
             padding: $padding;
@@ -483,7 +471,7 @@ body{
                 align-items: center;
                 input.search-box{
                     height: 3rem;
-                    width: 35rem;
+                    width: 40vw;
                     border: 1px solid $color-primary-dark;
                     background: $color-white;
                     outline-style: none;
@@ -522,7 +510,6 @@ body{
                         line-height: 13rem;
                         border-radius: 50%;
                         background-image: $about-bg-img;
-                        background-color: $color-primary;
                         background-size: 95%;
                         text-align: center;
                     }
@@ -780,79 +767,258 @@ body{
 
 body{
     @include respond-to('smedium') {
-        background: yellow;
         .nav-bar{
+            padding: 0rem;
             @include row;
             justify-content: space-between;
             position: fixed;
             z-index: 2;
             top: 0;
-            height: 14vh;
+            height: 10vh;
             width: 100%;
-            background-color: $color-white;  
-            .nav-link {
-                &:visited{
-                    text-decoration: none;
-                    color: $color-primary-dark;
+            background-color: $color-white; 
+            .nav-logo-img{
+                padding: 1rem;
+            }
+            .main-nav{
+                @include column;
+                list-style: none;
+                display: block;
+                overflow: hidden;
+                .nav-menu{
+                    font-size: 1.5rem;
+                    display: block;
+                    text-align: center;
+                    padding: 0.8rem;
+                    &:hover{
+                        color: $color-primary-main;
+                    }
+                } 
+                .nav-link {
+                    display: block;
+                    width: 40vw;
+                    color: $color-primary-main;
+                    border: 1px solid $color-white;
+                    background-color: $color-primary-dark;
+                    overflow: hidden;
+                    padding: 1rem;
+                    text-align: center;
+                    &:visited{
+                        text-decoration: none;
+                        color: $color-primary-light;
+                    }
+                    &:hover{
+                        color: $color-white;
+                    }
                 }
                 &:hover{
-                    color: $color-primary-main;
+                    overflow: visible;
+                    transition: all 0.8s ease;
                 }
+    
             }
         }
         li {
-            font-size: 1.1rem;
-            padding-left: 0.7rem;
+            font-size: 1.3rem;
+            padding-left: 0;
         }
     
 
         .main {
+            @include column;
+            width: 100%;
             height: 32rem;
+            justify-content: center;
+            align-items: center;
             .main-content{
                 position: relative;
-                
+    
+                .main-text{
+                    color: $color-white;
+                    font-family: $bodoni;
+                    font-weight: 700;
+                    font-size: 3rem;
+                    line-height: 3rem;
+                    text-align: center;
+                    padding-bottom: 1rem;
+                    &:hover{
+                        color: rgba($color: #000000, $alpha: 0);
+                        background-image: $bg-logo;
+                        background-size: 70%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+    
+                    }
+                }
+            }
+            .search {
+                @include row;
+                align-items: center;
+                input.search-box{
+                    height: 3rem;
+                    width: 55vw;
+                    border: 1px solid $color-primary-dark;
+                    background: $color-white;
+                    outline-style: none;
+                    padding-left: 1rem;
+                }
+                .search-btn{
+                    height: 3rem;
+                    width: 5rem;
+                    border: 0;
+                    outline: none;
+                    color: $color-primary;
+                    background-color: $color-primary-dark;
+                    &:hover{
+                        color: $color-primary-light;
+                    }
+                }
+    
+    
             }
         }
     
+    
         .about-artlier{
-            padding: $padding;
+            padding: $padding-s;
             .explain{
                 @include column;
                 align-items: center;
                 .explain-art{
-                    margin-left: -6rem;
-                    font-size: 3.5rem;
+                    margin-left: -3rem;
+                    font-size: 2rem;
                     .art{
-                        width: 11rem;
-                        height: 11rem;
-                        line-height: 11rem;
+                        width: 7rem;
+                        height: 7rem;
+                        line-height: 7rem;
+    
                     }
                     .atelier{
-                        width: 11rem;
-                        height: 11rem;
-                        line-height: 11rem;
+                        width: 7rem;
+                        height: 7rem;
+                        line-height: 7rem;
                     }
                     .plus{
-                        padding: 2rem 1rem 2rem 1rem;
+                        padding: 1rem 0.5rem 1rem 0.5rem;
                     }
                 }
                 p{
-                    width: 35rem;
+                    width: 80vw;
                     text-align: center;
+                    padding-top: 1rem;
                 }
             }
             
     
         }
     
-    
-        .our-services{
-            .services-content{
+        .our-artists{
+            padding: $padding-s;
+            .artists-content{
                 @include row;
+                width: 100%;
+                flex-wrap: wrap;
                 justify-content: center;
+    
+            }
+            .artist{
+                width: 42vw;
+                height: 42vw;
+                position: relative;
+                cursor: pointer;
+                overflow: hidden;
+    
+                .artist-img-box{
+                    width: 42vw;
+                    height: 42vw;
+                    position: absolute;
+                    z-index: 1;
+                    transition: all 2.5s ease-in;
+                    bottom: 0px;
+                    overflow: hidden;
+                    .artist-img{
+                        position: absolute; top:0; left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &:hover{
+                        bottom: 12rem;
+                        transition-duration: .8s;
+    
+                    }
+                    
+                }
+                
+    
+                .artist-text{
+                    width: 42vw;
+                    height: 42vw;
+                    color: $color-white;
+                    background-color: $color-primary-dark;
+                    position: absolute;
+                    bottom: 0;
+                    @include column;
+                    justify-content: flex-end;
+                    padding: 1rem;
+                    p{
+                        padding-bottom: 1rem;
+                        font-size: 0.8rem;
+                    }
+                    .btn-visit{
+                        border: 1px solid;
+                        padding: 0.2rem;
+                        color: $color-white;
+                        letter-spacing: $spacing-l;
+                        text-align: center;
+                        &:hover{
+                            color: $color-primary-main;
+                        }
+                    }
+    
+                }
+            }
+        }
+    
+        .visit-artlier{
+            padding: 0;
+            h2{
+                padding: 1rem;
+            }
+            .visit-content{
+                position: relative;
+                width: 100vw;
+                height: 50vh;
+        
+                .visit-img-png{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    cursor: pointer;
+    
+                }
+                .visit-img{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                }
+                &:hover .visit-img-png{
+                    transform: scale(1.4);
+                    transition-duration: 1s;
+                }
+                
+            }
+        }
+
+        .our-services{
+            padding: $padding-s;
+            .services-content{
+                @include column;
+                align-items: center;
                 padding-bottom: 0rem;
                 .service{
-                    width: 27vw;
+                    width: 80%;
                     height: auto;
                     background-color: $color-primary-dark;
                     color: $color-primary-light;
@@ -888,23 +1054,24 @@ body{
         }
     
         .contact{
-            padding: $padding;
+            padding: $padding-s;
             .contact-content{
-                @include row;
-                justify-content: center;
+                @include column;
+                align-items: center;
+                padding-bottom: 1rem;
                 .contact-audience{
                     .contact-input{
                         background-image: $contact-bg-img2;
                     }
                 }
                 .contact-input{
-                    padding: 0 2rem 0 2rem;
+                    padding: 0 2rem 2rem 2rem;
                     background-image: $contact-bg-img;
                     background-size: 25vw;
                     background-repeat: no-repeat;
                     h3{
                         font-family: $bodoni;
-                        font-size: 3rem;
+                        font-size: 2.5rem;
                     }
                     .contact-detail{
                         @include row;
@@ -959,6 +1126,7 @@ body{
                 color: $color-white;
             }
             .nav-link {
+                font-size: 0;
                 &:visited{
                     text-decoration: none;
                     color: $color-primary;
