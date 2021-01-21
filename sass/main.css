@@ -967,6 +967,8 @@ body .nav-bar-footer .nav-link:hover {
     overflow: hidden;
     height: 9vh;
     width: 40vw;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
   body .nav-bar .main-nav .nav-menu {
     font-size: 1.5rem;
