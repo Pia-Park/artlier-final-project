@@ -967,7 +967,7 @@ body .nav-bar-footer .nav-link:hover {
     font-size: 1.5rem;
     display: block;
     text-align: center;
-    padding: 0.8rem;
+    padding: 0.9rem;
   }
   body .nav-bar .main-nav .nav-menu:hover {
     color: #fbcfae;
@@ -1368,6 +1368,269 @@ body .nav-bar-footer .nav-link:hover {
   }
   body .nav-bar-footer .nav-link:hover {
     color: #dfc5b2;
+  }
+}
+
+@media (max-width: 375px) {
+  body .nav-bar .nav-logo-img {
+    padding: 1rem;
+    height: 9vh;
+    width: auto;
+  }
+  body .nav-bar .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style: none;
+    display: block;
+    overflow: hidden;
+  }
+  body .nav-bar .main-nav .nav-menu {
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+  body .nav-bar .main-nav .nav-menu:hover {
+    color: #fbcfae;
+  }
+  body .nav-bar .main-nav .nav-link {
+    display: block;
+    width: 43vw;
+    color: #fbcfae;
+    border: 0.5px solid #fff;
+    background-color: #201710;
+    overflow: hidden;
+    padding: 0.7rem;
+    text-align: center;
+  }
+  body .nav-bar .main-nav .nav-link:visited {
+    text-decoration: none;
+    color: #dfc5b2;
+  }
+  body .nav-bar .main-nav .nav-link:hover {
+    color: #fff;
+  }
+  body .nav-bar .main-nav:hover {
+    overflow: visible;
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+  }
+  body .main .main-content {
+    position: relative;
+  }
+  body .main .main-content .main-text:hover {
+    color: rgba(0, 0, 0, 0);
+    background-image: url("/img/artlier_logo_white.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  body .main .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .main .search input.search-box {
+    height: 3rem;
+    width: 55vw;
+    border: 1px solid #201710;
+    background: #fff;
+    outline-style: none;
+    padding-left: 1rem;
+  }
+  body .main .search .search-btn {
+    height: 3rem;
+    width: 5rem;
+    border: 0;
+    outline: none;
+    color: #8d7968;
+    background-color: #201710;
+  }
+  body .main .search .search-btn:hover {
+    color: #dfc5b2;
+  }
+  body .about-artlier {
+    padding: 3rem 1rem 3rem 1rem;
+  }
+  body .about-artlier .explain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .about-artlier .explain .explain-art {
+    margin-left: -3rem;
+    font-size: 2rem;
+  }
+  body .about-artlier .explain .explain-art .art {
+    width: 7rem;
+    height: 7rem;
+    line-height: 7rem;
+  }
+  body .about-artlier .explain .explain-art .atelier {
+    width: 7rem;
+    height: 7rem;
+    line-height: 7rem;
+  }
+  body .about-artlier .explain .explain-art .plus {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+  body .about-artlier .explain p {
+    width: 80vw;
+    text-align: center;
+    padding-top: 1rem;
+  }
+  body .our-artists {
+    padding: 3rem 1rem 3rem 1rem;
+  }
+  body .our-artists .artists-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .our-artists .artist {
+    width: 42vw;
+    height: 42vw;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  body .our-artists .artist .artist-img-box {
+    width: 42vw;
+    height: 42vw;
+    position: absolute;
+    z-index: 1;
+    -webkit-transition: all 2.5s ease-in;
+    transition: all 2.5s ease-in;
+    bottom: 0px;
+    overflow: hidden;
+  }
+  body .our-artists .artist .artist-img-box .artist-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  body .our-artists .artist .artist-img-box:hover {
+    bottom: 12rem;
+    -webkit-transition-duration: .8s;
+            transition-duration: .8s;
+  }
+  body .our-artists .artist .artist-text {
+    width: 42vw;
+    height: 42vw;
+    color: #fff;
+    background-color: #201710;
+    position: absolute;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 1rem;
+  }
+  body .our-artists .artist .artist-text p {
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+  }
+  body .our-artists .artist .artist-text .btn-visit {
+    border: 1px solid;
+    padding: 0.2rem;
+    color: #fff;
+    letter-spacing: 0.3rem;
+    text-align: center;
+  }
+  body .our-artists .artist .artist-text .btn-visit:hover {
+    color: #fbcfae;
+  }
+  body .our-services {
+    padding: 3rem 1rem 3rem 1rem;
+  }
+  body .our-services .services-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 0rem;
+  }
+  body .our-services .services-content .service {
+    width: 80%;
+    height: auto;
+    background-color: #201710;
+    color: #dfc5b2;
+    margin: 1rem;
+    padding: 1.8rem;
+  }
+  body .our-services .services-content .service h3 {
+    font-family: "Bodoni Moda", serif;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+  }
+  body .our-services .services-content .service .service-price {
+    font-weight: 100;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    padding: 1rem 0 1rem 0;
+    color: #fbcfae;
+  }
+  body .our-services .services-content .service .service-btn {
+    display: block;
+    border: 1px solid;
+    color: #dfc5b2;
+    padding: 1rem;
+    margin-top: 1rem;
+    letter-spacing: 0.3rem;
+    text-align: center;
+  }
+  body .our-services .services-content .service .service-btn:hover {
+    color: #fff;
+  }
+  body .contact .contact-content .contact-input {
+    padding: 0 2rem 2rem 2rem;
+    background-image: url("/img/watercolour-4117519_1280.png");
+    background-size: 45vw;
+    background-repeat: no-repeat;
   }
 }
 /*# sourceMappingURL=main.css.map */

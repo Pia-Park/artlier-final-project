@@ -789,7 +789,7 @@ body{
                     font-size: 1.5rem;
                     display: block;
                     text-align: center;
-                    padding: 0.8rem;
+                    padding: 0.9rem;
                     &:hover{
                         color: $color-primary-main;
                     }
@@ -1136,6 +1136,259 @@ body{
                 }
             }
         }
+    }
+
+
+}
+
+body{
+    @include respond-to('small') {
+        .nav-bar{
+            .nav-logo-img{
+                padding: 1rem;
+                height: 9vh;
+                width: auto;
+            }
+            .main-nav{
+                @include column;
+                list-style: none;
+                display: block;
+                overflow: hidden;
+                .nav-menu{
+                    font-size: 1.5rem;
+                    display: block;
+                    text-align: center;
+                    padding: 1rem;
+                    &:hover{
+                        color: $color-primary-main;
+                    }
+                } 
+                .nav-link {
+                    display: block;
+                    width: 43vw;
+                    color: $color-primary-main;
+                    border: 0.5px solid $color-white;
+                    background-color: $color-primary-dark;
+                    overflow: hidden;
+                    padding: 0.7rem;
+                    text-align: center;
+                    &:visited{
+                        text-decoration: none;
+                        color: $color-primary-light;
+                    }
+                    &:hover{
+                        color: $color-white;
+                    }
+                }
+                &:hover{
+                    overflow: visible;
+                    transition: all 0.8s ease;
+                }
+    
+            }
+        }
+
+    
+
+        .main {
+            .main-content{
+                position: relative;
+    
+                .main-text{
+                    &:hover{
+                        color: rgba($color: #000000, $alpha: 0);
+                        background-image: $bg-logo;
+                        background-size: 90%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+    
+                    }
+                }
+            }
+            .search {
+                @include row;
+                align-items: center;
+                input.search-box{
+                    height: 3rem;
+                    width: 55vw;
+                    border: 1px solid $color-primary-dark;
+                    background: $color-white;
+                    outline-style: none;
+                    padding-left: 1rem;
+                }
+                .search-btn{
+                    height: 3rem;
+                    width: 5rem;
+                    border: 0;
+                    outline: none;
+                    color: $color-primary;
+                    background-color: $color-primary-dark;
+                    &:hover{
+                        color: $color-primary-light;
+                    }
+                }
+    
+    
+            }
+        }
+    
+    
+        .about-artlier{
+            padding: $padding-s;
+            .explain{
+                @include column;
+                align-items: center;
+                .explain-art{
+                    margin-left: -3rem;
+                    font-size: 2rem;
+                    .art{
+                        width: 7rem;
+                        height: 7rem;
+                        line-height: 7rem;
+    
+                    }
+                    .atelier{
+                        width: 7rem;
+                        height: 7rem;
+                        line-height: 7rem;
+                    }
+                    .plus{
+                        padding: 1rem 0.5rem 1rem 0.5rem;
+                    }
+                }
+                p{
+                    width: 80vw;
+                    text-align: center;
+                    padding-top: 1rem;
+                }
+            }
+            
+    
+        }
+    
+        .our-artists{
+            padding: $padding-s;
+            .artists-content{
+                @include row;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: center;
+    
+            }
+            .artist{
+                width: 42vw;
+                height: 42vw;
+                position: relative;
+                cursor: pointer;
+                overflow: hidden;
+    
+                .artist-img-box{
+                    width: 42vw;
+                    height: 42vw;
+                    position: absolute;
+                    z-index: 1;
+                    transition: all 2.5s ease-in;
+                    bottom: 0px;
+                    overflow: hidden;
+                    .artist-img{
+                        position: absolute; top:0; left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &:hover{
+                        bottom: 12rem;
+                        transition-duration: .8s;
+    
+                    }
+                    
+                }
+                
+    
+                .artist-text{
+                    width: 42vw;
+                    height: 42vw;
+                    color: $color-white;
+                    background-color: $color-primary-dark;
+                    position: absolute;
+                    bottom: 0;
+                    @include column;
+                    justify-content: flex-end;
+                    padding: 1rem;
+                    p{
+                        padding-bottom: 1rem;
+                        font-size: 0.8rem;
+                    }
+                    .btn-visit{
+                        border: 1px solid;
+                        padding: 0.2rem;
+                        color: $color-white;
+                        letter-spacing: $spacing-l;
+                        text-align: center;
+                        &:hover{
+                            color: $color-primary-main;
+                        }
+                    }
+    
+                }
+            }
+        }
+    
+
+        .our-services{
+            padding: $padding-s;
+            .services-content{
+                @include column;
+                align-items: center;
+                padding-bottom: 0rem;
+                .service{
+                    width: 80%;
+                    height: auto;
+                    background-color: $color-primary-dark;
+                    color: $color-primary-light;
+                    margin: 1rem;
+                    padding: 1.8rem;
+                    h3{
+                        font-family: $bodoni;
+                        letter-spacing: $spacing-m;
+                        font-size: 1.5rem;
+                    }
+                    .service-price{
+                        font-weight: 100;
+                        font-size: 1.2rem;
+                        letter-spacing: $spacing-m;
+                        padding: 1rem 0 1rem 0;
+                        color: $color-primary-main;
+                    }
+                    .service-btn{
+                        display: block;
+                        border: 1px solid;
+                        color: $color-primary-light;
+                        padding: 1rem;
+                        margin-top: 1rem;
+                        letter-spacing: $spacing-l;
+                        text-align: center;
+                        &:hover{
+                            color: $color-white;
+                        }
+                    }
+                }
+    
+            }
+        }
+    
+        .contact{
+            .contact-content{
+                
+                .contact-input{
+                    padding: 0 2rem 2rem 2rem;
+                    background-image: $contact-bg-img;
+                    background-size: 45vw;
+                    background-repeat: no-repeat;
+                    
+                }
+            }
+        }
+    
     }
 
 
