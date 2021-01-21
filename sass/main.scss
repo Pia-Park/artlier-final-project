@@ -774,29 +774,35 @@ body{
             position: fixed;
             z-index: 2;
             top: 0;
-            height: 10vh;
+            height: 9vh;
             width: 100%;
             background-color: $color-white; 
             .nav-logo-img{
-                padding: 1rem;
+                padding: 1.3rem;
+                height: 9vh;
+                width: auto;
             }
             .main-nav{
                 @include column;
                 list-style: none;
                 display: block;
                 overflow: hidden;
+                height: 9vh;
+                width: 40vw;
                 .nav-menu{
-                    font-size: 1.5rem;
+                    font-size: 1.7rem;
                     display: block;
                     text-align: center;
-                    padding: 0.9rem;
+                    border: 1px solid $color-white;
+                    height: 100%;
+                    padding: 1.5rem;
                     &:hover{
                         color: $color-primary-main;
                     }
                 } 
                 .nav-link {
                     display: block;
-                    width: 40vw;
+                    // width: 40vw;
                     color: $color-primary-main;
                     border: 1px solid $color-white;
                     background-color: $color-primary-dark;
@@ -1150,15 +1156,10 @@ body{
                 width: auto;
             }
             .main-nav{
-                @include column;
-                list-style: none;
-                display: block;
-                overflow: hidden;
+                
                 .nav-menu{
-                    font-size: 1.5rem;
-                    display: block;
-                    text-align: center;
-                    padding: 1rem;
+                    font-size: 1.3rem;
+                    padding: 0.8rem;
                     &:hover{
                         color: $color-primary-main;
                     }
@@ -1187,8 +1188,6 @@ body{
     
             }
         }
-
-    
 
         .main {
             .main-content{
@@ -1230,8 +1229,7 @@ body{
     
     
             }
-        }
-    
+        }    
     
         .about-artlier{
             padding: $padding-s;
@@ -1331,8 +1329,7 @@ body{
     
                 }
             }
-        }
-    
+        }   
 
         .our-services{
             padding: $padding-s;
@@ -1385,6 +1382,58 @@ body{
                     background-size: 45vw;
                     background-repeat: no-repeat;
                     
+                }
+            }
+        }
+
+        .contact{
+            padding: $padding-s;
+            .contact-content{
+                @include column;
+                align-items: center;
+                padding-bottom: 1rem;
+                .contact-audience{
+                    .contact-input{
+                        background-image: $contact-bg-img2;
+                    }
+                }
+                .contact-input{
+                    padding: 0 2rem 2rem 2rem;
+                    background-image: $contact-bg-img;
+                    background-size: 25vw;
+                    background-repeat: no-repeat;
+                    h3{
+                        font-family: $bodoni;
+                        font-size: 2.5rem;
+                    }
+                    .contact-detail{
+                        @include row;
+                        justify-content: space-between;
+                        .label{
+                            padding-right: 0.5rem;
+                            line-height: 3rem;
+                        }
+                        .label-input{
+                            padding-right: 0rem;
+                            line-height: 3rem;
+                        }
+                    }
+                    input{
+                        width: 12rem;
+                        color: $color-grey-dark;
+                        padding: 0.2rem;
+                    }
+                    
+                    
+                    .detail-find{
+                        @include column;
+                        select{
+                            padding: 0.2rem;
+                            width: 100%;
+                        }
+                    }
+
+    
                 }
             }
         }

@@ -944,12 +944,14 @@ body .nav-bar-footer .nav-link:hover {
     position: fixed;
     z-index: 2;
     top: 0;
-    height: 10vh;
+    height: 9vh;
     width: 100%;
     background-color: #fff;
   }
   body .nav-bar .nav-logo-img {
-    padding: 1rem;
+    padding: 1.3rem;
+    height: 9vh;
+    width: auto;
   }
   body .nav-bar .main-nav {
     display: -webkit-box;
@@ -962,19 +964,22 @@ body .nav-bar-footer .nav-link:hover {
     list-style: none;
     display: block;
     overflow: hidden;
+    height: 9vh;
+    width: 40vw;
   }
   body .nav-bar .main-nav .nav-menu {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     display: block;
     text-align: center;
-    padding: 0.9rem;
+    border: 1px solid #fff;
+    height: 100%;
+    padding: 1.5rem;
   }
   body .nav-bar .main-nav .nav-menu:hover {
     color: #fbcfae;
   }
   body .nav-bar .main-nav .nav-link {
     display: block;
-    width: 40vw;
     color: #fbcfae;
     border: 1px solid #fff;
     background-color: #201710;
@@ -1377,23 +1382,9 @@ body .nav-bar-footer .nav-link:hover {
     height: 9vh;
     width: auto;
   }
-  body .nav-bar .main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    list-style: none;
-    display: block;
-    overflow: hidden;
-  }
   body .nav-bar .main-nav .nav-menu {
-    font-size: 1.5rem;
-    display: block;
-    text-align: center;
-    padding: 1rem;
+    font-size: 1.3rem;
+    padding: 0.8rem;
   }
   body .nav-bar .main-nav .nav-menu:hover {
     color: #fbcfae;
@@ -1631,6 +1622,73 @@ body .nav-bar-footer .nav-link:hover {
     background-image: url("/img/watercolour-4117519_1280.png");
     background-size: 45vw;
     background-repeat: no-repeat;
+  }
+  body .contact {
+    padding: 3rem 1rem 3rem 1rem;
+  }
+  body .contact .contact-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 1rem;
+  }
+  body .contact .contact-content .contact-audience .contact-input {
+    background-image: url("/img/watercolour-4117519_12801.png");
+  }
+  body .contact .contact-content .contact-input {
+    padding: 0 2rem 2rem 2rem;
+    background-image: url("/img/watercolour-4117519_1280.png");
+    background-size: 25vw;
+    background-repeat: no-repeat;
+  }
+  body .contact .contact-content .contact-input h3 {
+    font-family: "Bodoni Moda", serif;
+    font-size: 2.5rem;
+  }
+  body .contact .contact-content .contact-input .contact-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .contact .contact-content .contact-input .contact-detail .label {
+    padding-right: 0.5rem;
+    line-height: 3rem;
+  }
+  body .contact .contact-content .contact-input .contact-detail .label-input {
+    padding-right: 0rem;
+    line-height: 3rem;
+  }
+  body .contact .contact-content .contact-input input {
+    width: 12rem;
+    color: #5e5d5d;
+    padding: 0.2rem;
+  }
+  body .contact .contact-content .contact-input .detail-find {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .contact .contact-content .contact-input .detail-find select {
+    padding: 0.2rem;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
