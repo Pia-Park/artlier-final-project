@@ -790,7 +790,6 @@ body{
                 overflow: hidden;
                 height: 9vh;
                 width: 40vw;
-                transition: all 0.5s ease;
                 .nav-menu{
                     font-size: 1.5rem;
                     display: block;
@@ -804,25 +803,26 @@ body{
                 } 
                 .nav-link {
                     display: block;
-                    // width: 40vw;
                     color: $color-primary-main;
                     border: 1px solid $color-white;
                     background-color: $color-primary-dark;
                     overflow: hidden;
                     padding: 1rem;
-                    text-align: center;
+                    text-align: center; 
                     &:visited{
                         text-decoration: none;
                         color: $color-primary-light;
                     }
                     &:hover{
                         color: $color-white;
+                        bottom: 0;
                     }
                 }
                 &:hover{
                     overflow: visible;
                     transition: all 0.8s ease;
                 }
+                
     
             }
         }
@@ -1185,7 +1185,7 @@ body{
                 }
                 &:hover{
                     overflow: visible;
-                    transition: all 0.8s ease;
+                    // transition: all 0.8s ease;
                 }
     
             }

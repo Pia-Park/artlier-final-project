@@ -967,8 +967,6 @@ body .nav-bar-footer .nav-link:hover {
     overflow: hidden;
     height: 9vh;
     width: 40vw;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
   }
   body .nav-bar .main-nav .nav-menu {
     font-size: 1.5rem;
@@ -996,6 +994,7 @@ body .nav-bar-footer .nav-link:hover {
   }
   body .nav-bar .main-nav .nav-link:hover {
     color: #fff;
+    bottom: 0;
   }
   body .nav-bar .main-nav:hover {
     overflow: visible;
@@ -1411,8 +1410,6 @@ body .nav-bar-footer .nav-link:hover {
   }
   body .nav-bar .main-nav:hover {
     overflow: visible;
-    -webkit-transition: all 0.8s ease;
-    transition: all 0.8s ease;
   }
   body .main .main-content {
     position: relative;
