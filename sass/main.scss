@@ -181,6 +181,7 @@ body{
                 @include row;
                 justify-content: center;
                 font-size: 5rem;
+                margin-left: -8vw;
                 .art{
                     font-family: $bodoni;
                     width: 15rem;
@@ -270,6 +271,7 @@ body{
                     padding: 0.5rem;
                     color: $color-white;
                     letter-spacing: $spacing-l;
+                    text-align: center;
                     &:hover{
                         color: $color-primary-main;
                     }
