@@ -151,6 +151,7 @@ body .main .search input.search-box {
   background: #fff;
   outline-style: none;
   padding-left: 1rem;
+  border-radius: 0;
 }
 
 body .main .search .search-btn {
