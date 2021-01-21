@@ -1426,7 +1426,7 @@ body .nav-bar-footer .nav-link:hover {
   body .main .main-content .main-text:hover {
     color: rgba(0, 0, 0, 0);
     background-image: url("/img/artlier_logo_white.png");
-    background-size: 90%;
+    background-size: 110%;
     background-repeat: no-repeat;
     background-position: center;
   }
