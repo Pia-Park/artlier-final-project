@@ -1001,6 +1001,11 @@ body .nav-bar-footer .nav-link:hover {
     -webkit-transition: all 0.8s ease;
     transition: all 0.8s ease;
   }
+  body .nav-bar .main-nav::after {
+    overflow: hidden;
+    -webkit-transition: none;
+    transition: none;
+  }
   body li {
     font-size: 1.3rem;
     padding-left: 0;

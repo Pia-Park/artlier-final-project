@@ -822,6 +822,10 @@ body{
                     overflow: visible;
                     transition: all 0.8s ease;
                 }
+                &::after{
+                    overflow: hidden;
+                    transition: none;
+                }
                 
     
             }
