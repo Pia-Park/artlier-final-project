@@ -1131,9 +1131,11 @@ body{
             background-color: $color-primary-dark;
             justify-content: space-between;
             .nav-logo-img{
-                width: 10rem;
+                width: 9rem;
                 height: auto;
-                margin-right: 4rem;
+                margin-right: 3rem;
+                display: flex;
+                justify-content: center
             }    
             .main-nav{
                 @include row;

@@ -1353,9 +1353,15 @@ body .nav-bar-footer .nav-link:hover {
             justify-content: space-between;
   }
   body .nav-bar-footer .nav-logo-img {
-    width: 10rem;
+    width: 9rem;
     height: auto;
-    margin-right: 4rem;
+    margin-right: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body .nav-bar-footer .main-nav {
     display: -webkit-box;
