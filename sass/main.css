@@ -1639,6 +1639,9 @@ body .nav-bar-footer .nav-link:hover {
     margin: 1rem;
     padding: 1.8rem;
   }
+  body .our-services .services-content .service p {
+    font-size: 0.8rem;
+  }
   body .our-services .services-content .service h3 {
     font-family: "Bodoni Moda", serif;
     letter-spacing: 0.2rem;
