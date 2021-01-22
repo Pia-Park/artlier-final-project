@@ -1340,6 +1340,37 @@ body{
                 }
             }
         }   
+        .visit-artlier{
+            padding: 0;
+            h2{
+                padding: 1rem;
+            }
+            .visit-content{
+                position: relative;
+                width: 100vw;
+                height: 40vh;
+        
+                .visit-img-png{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    cursor: pointer;
+    
+                }
+                .visit-img{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                }
+                &:hover .visit-img-png{
+                    transform: scale(1.4);
+                    transition-duration: 1s;
+                }
+                
+            }
+        }
 
         .our-services{
             padding: $padding-s;
