@@ -1126,12 +1126,13 @@ body{
         .nav-bar-footer{
             @include column;
             padding: 1.2rem 2rem 5rem 2rem;
-            height: 50vh;
+            height: 35vh;
             width: 100%;
             background-color: $color-primary-dark;
             justify-content: center;
+            align-items: center;
             .nav-logo-img{
-                width: 7rem;
+                width: 9rem;
                 height: auto;
                 margin-right: 0rem;
                 padding: 1rem

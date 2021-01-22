@@ -1345,15 +1345,18 @@ body .nav-bar-footer .nav-link:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 1.2rem 2rem 5rem 2rem;
-    height: 50vh;
+    height: 35vh;
     width: 100%;
     background-color: #201710;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body .nav-bar-footer .nav-logo-img {
-    width: 7rem;
+    width: 9rem;
     height: auto;
     margin-right: 0rem;
     padding: 1rem;
