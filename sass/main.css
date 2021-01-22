@@ -1398,7 +1398,7 @@ body .nav-bar-footer .nav-link:hover {
     width: auto;
   }
   body .nav-bar .main-nav .nav-menu {
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 9vh;
   }
   body .nav-bar .main-nav .nav-menu:hover {
@@ -1406,12 +1406,13 @@ body .nav-bar-footer .nav-link:hover {
   }
   body .nav-bar .main-nav .nav-link {
     display: block;
-    width: 43vw;
+    font-size: 0.8rem;
+    width: 35vw;
     color: #fbcfae;
     border: 0.5px solid #fff;
     background-color: #201710;
     overflow: hidden;
-    padding: 0.7rem;
+    padding: 0.6rem;
     text-align: center;
   }
   body .nav-bar .main-nav .nav-link:visited {

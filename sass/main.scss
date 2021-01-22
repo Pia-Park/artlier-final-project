@@ -1174,7 +1174,7 @@ body{
             .main-nav{
                 
                 .nav-menu{
-                    font-size: 1.3rem;
+                    font-size: 1rem;
                     line-height: 9vh;
                     &:hover{
                         color: $color-primary-main;
@@ -1182,12 +1182,13 @@ body{
                 } 
                 .nav-link {
                     display: block;
-                    width: 43vw;
+                    font-size: 0.8rem;
+                    width: 35vw;
                     color: $color-primary-main;
                     border: 0.5px solid $color-white;
                     background-color: $color-primary-dark;
                     overflow: hidden;
-                    padding: 0.7rem;
+                    padding: 0.6rem;
                     text-align: center;
                     &:visited{
                         text-decoration: none;
