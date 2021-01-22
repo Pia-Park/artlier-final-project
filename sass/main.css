@@ -1658,8 +1658,8 @@ body .nav-bar-footer .nav-link:hover {
     display: block;
     border: 1px solid;
     color: #dfc5b2;
-    padding: 1rem;
-    margin-top: 1rem;
+    padding: 0.8rem;
+    margin-top: 0.2rem;
     letter-spacing: 0.3rem;
     text-align: center;
   }
