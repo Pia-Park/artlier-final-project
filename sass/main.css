@@ -1348,20 +1348,14 @@ body .nav-bar-footer .nav-link:hover {
     height: 10vh;
     width: 100%;
     background-color: #201710;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body .nav-bar-footer .nav-logo-img {
     width: 9rem;
     height: auto;
     margin-right: 3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   body .nav-bar-footer .main-nav {
     display: -webkit-box;
