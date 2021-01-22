@@ -966,10 +966,10 @@ body .nav-bar-footer .nav-link:hover {
     display: block;
     overflow: hidden;
     height: 9vh;
-    width: 40vw;
+    width: 35vw;
   }
   body .nav-bar .main-nav .nav-menu {
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: block;
     text-align: center;
     border: 1px solid #fff;
@@ -980,6 +980,7 @@ body .nav-bar-footer .nav-link:hover {
     color: #fbcfae;
   }
   body .nav-bar .main-nav .nav-link {
+    font-size: 0.8rem;
     display: block;
     color: #fbcfae;
     border: 1px solid #fff;
