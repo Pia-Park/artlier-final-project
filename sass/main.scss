@@ -1124,16 +1124,16 @@ body{
         }
     
         .nav-bar-footer{
-            @include row;
+            @include column;
             padding: 1.2rem 2rem 5rem 2rem;
             height: 10vh;
             width: 100%;
             background-color: $color-primary-dark;
             justify-content: center;
             .nav-logo-img{
-                width: 9rem;
+                width: 7rem;
                 height: auto;
-                margin-right: 3rem;
+                margin-right: 1rem;
             }    
             .main-nav{
                 @include row;
@@ -1141,7 +1141,7 @@ body{
                 color: $color-white;
             }
             .nav-link {
-                font-size: 0;
+                font-size: 1rem;
                 &:visited{
                     text-decoration: none;
                     color: $color-primary;

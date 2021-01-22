@@ -1340,10 +1340,10 @@ body .nav-bar-footer .nav-link:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 1.2rem 2rem 5rem 2rem;
     height: 10vh;
     width: 100%;
@@ -1353,9 +1353,9 @@ body .nav-bar-footer .nav-link:hover {
             justify-content: center;
   }
   body .nav-bar-footer .nav-logo-img {
-    width: 9rem;
+    width: 7rem;
     height: auto;
-    margin-right: 3rem;
+    margin-right: 1rem;
   }
   body .nav-bar-footer .main-nav {
     display: -webkit-box;
@@ -1369,7 +1369,7 @@ body .nav-bar-footer .nav-link:hover {
     color: #fff;
   }
   body .nav-bar-footer .nav-link {
-    font-size: 0;
+    font-size: 1rem;
   }
   body .nav-bar-footer .nav-link:visited {
     text-decoration: none;
