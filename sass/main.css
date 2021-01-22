@@ -1345,7 +1345,7 @@ body .nav-bar-footer .nav-link:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 1.2rem 2rem 5rem 2rem;
-    height: 10vh;
+    height: 15vh;
     width: 100%;
     background-color: #201710;
     -webkit-box-pack: center;
@@ -1365,6 +1365,8 @@ body .nav-bar-footer .nav-link:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     list-style: none;
     color: #fff;
   }
