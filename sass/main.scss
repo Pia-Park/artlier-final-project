@@ -35,6 +35,36 @@ $bg-logo: url('/img/artlier_logo_white.png');
     flex-direction: column;
 }
 
+@mixin circle-l{
+    width: 15rem;
+    height: 15rem;
+    line-height: 15rem;
+    border-radius: 50%;
+}
+
+@mixin circle-m {
+    width: 13rem;
+    height: 13rem;
+    line-height: 13rem;
+    border-radius: 50%;    
+}
+
+@mixin circle-s {
+    width: 7rem;
+    height: 7rem;
+    line-height: 7rem;
+    border-radius: 50%;    
+}
+
+@mixin artist-box {
+    width: 22vw;
+    height: 22vw;
+}
+
+@mixin artist-box-sm {
+    width: 42vw;
+    height: 42vw;  
+}
 
 
 *, *::before, *::after{
@@ -173,20 +203,14 @@ body{
                 margin-left: -8vw;
                 .art{
                     font-family: $bodoni;
-                    width: 15rem;
-                    height: 15rem;
-                    line-height: 15rem;
-                    border-radius: 50%;
+                    @include circle-l;
                     background-image: $about-bg-img;
                     background-size: 95%;
                     text-align: center;
                 }
                 .atelier{
                     font-family: $bodoni;
-                    width: 15rem;
-                    height: 15rem;
-                    line-height: 15rem;
-                    border-radius: 50%;
+                    @include circle-l;
                     background-image: $about-bg-img;
                     background-size: 70vw;
                     text-align: center;
@@ -214,15 +238,13 @@ body{
 
         }
         .artist{
-            width: 22vw;
-            height: 22vw;
+            @include artist-box;
             position: relative;
             cursor: pointer;
             overflow: hidden;
 
             .artist-img-box{
-                width: 22vw;
-                height: 22vw;
+                @include artist-box;
                 position: absolute;
                 z-index: 1;
                 transition: all 2.5s ease-in;
@@ -506,20 +528,14 @@ body{
                     margin-left: -10vw;
                     .art{
                         font-family: $bodoni;
-                        width: 13rem;
-                        height: 13rem;
-                        line-height: 13rem;
-                        border-radius: 50%;
+                        @include circle-m;
                         background-image: $about-bg-img;
                         background-size: 95%;
                         text-align: center;
                     }
                     .atelier{
                         font-family: $bodoni;
-                        width: 13rem;
-                        height: 13rem;
-                        line-height: 13rem;
-                        border-radius: 50%;
+                        @include circle-m;
                         background-image: $about-bg-img;
                         background-size: 70vw;
                         text-align: center;
@@ -547,15 +563,13 @@ body{
     
             }
             .artist{
-                width: 22vw;
-                height: 22vw;
+                @include artist-box;
                 position: relative;
                 cursor: pointer;
                 overflow: hidden;
     
                 .artist-img-box{
-                    width: 22vw;
-                    height: 22vw;
+                    @include artist-box;
                     position: absolute;
                     z-index: 1;
                     transition: all 2.5s ease-in;
@@ -896,15 +910,10 @@ body{
                     margin-left: -3rem;
                     font-size: 2rem;
                     .art{
-                        width: 7rem;
-                        height: 7rem;
-                        line-height: 7rem;
-    
+                        @include circle-s;
                     }
                     .atelier{
-                        width: 7rem;
-                        height: 7rem;
-                        line-height: 7rem;
+                        @include circle-s;
                     }
                     .plus{
                         padding: 1rem 0.5rem 1rem 0.5rem;
@@ -930,15 +939,13 @@ body{
     
             }
             .artist{
-                width: 42vw;
-                height: 42vw;
+                @include artist-box-sm;
                 position: relative;
                 cursor: pointer;
                 overflow: hidden;
     
                 .artist-img-box{
-                    width: 42vw;
-                    height: 42vw;
+                    @include artist-box-sm;
                     position: absolute;
                     z-index: 1;
                     transition: all 2.5s ease-in;
@@ -1242,15 +1249,10 @@ body{
                     margin-left: -3rem;
                     font-size: 2rem;
                     .art{
-                        width: 7rem;
-                        height: 7rem;
-                        line-height: 7rem;
-    
+                        @include circle-s;    
                     }
                     .atelier{
-                        width: 7rem;
-                        height: 7rem;
-                        line-height: 7rem;
+                        @include circle-s;
                     }
                     .plus{
                         padding: 1rem 0.5rem 1rem 0.5rem;
@@ -1276,15 +1278,13 @@ body{
     
             }
             .artist{
-                width: 42vw;
-                height: 42vw;
+                @include artist-box-sm;
                 position: relative;
                 cursor: pointer;
                 overflow: hidden;
     
                 .artist-img-box{
-                    width: 42vw;
-                    height: 42vw;
+                    @include artist-box-sm;
                     position: absolute;
                     z-index: 1;
                     transition: all 2.5s ease-in;
