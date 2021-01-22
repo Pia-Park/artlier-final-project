@@ -1140,8 +1140,8 @@ body{
             .main-nav{
                 @include row;
                 flex-wrap: wrap;
-                justify-content: space-around;
-                padding-right: 2rem;
+                justify-content: space-evenly;
+                // padding-right: 2rem;
                 list-style: none;
                 color: $color-white;
             }
