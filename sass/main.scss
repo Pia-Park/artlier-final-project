@@ -1126,19 +1126,21 @@ body{
         .nav-bar-footer{
             @include column;
             padding: 1.2rem 2rem 5rem 2rem;
-            height: 20vh;
+            height: 50vh;
             width: 100%;
             background-color: $color-primary-dark;
             justify-content: center;
             .nav-logo-img{
                 width: 7rem;
                 height: auto;
-                margin-right: 1rem;
+                margin-right: 0rem;
+                padding: 1rem
             }    
             .main-nav{
                 @include row;
                 flex-wrap: wrap;
                 justify-content: space-around;
+                padding-right: 1rem;
                 list-style: none;
                 color: $color-white;
             }

@@ -1345,7 +1345,7 @@ body .nav-bar-footer .nav-link:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 1.2rem 2rem 5rem 2rem;
-    height: 20vh;
+    height: 50vh;
     width: 100%;
     background-color: #201710;
     -webkit-box-pack: center;
@@ -1355,7 +1355,8 @@ body .nav-bar-footer .nav-link:hover {
   body .nav-bar-footer .nav-logo-img {
     width: 7rem;
     height: auto;
-    margin-right: 1rem;
+    margin-right: 0rem;
+    padding: 1rem;
   }
   body .nav-bar-footer .main-nav {
     display: -webkit-box;
@@ -1369,6 +1370,7 @@ body .nav-bar-footer .nav-link:hover {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding-right: 1rem;
     list-style: none;
     color: #fff;
   }
