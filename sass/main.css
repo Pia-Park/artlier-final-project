@@ -1373,7 +1373,7 @@ body .nav-bar-footer .nav-link:hover {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding-right: 1rem;
+    padding-right: 2rem;
     list-style: none;
     color: #fff;
   }
