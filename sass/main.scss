@@ -1126,7 +1126,7 @@ body{
         .nav-bar-footer{
             @include column;
             padding: 1.2rem 2rem 5rem 2rem;
-            height: 15vh;
+            height: 20vh;
             width: 100%;
             background-color: $color-primary-dark;
             justify-content: center;
@@ -1138,6 +1138,7 @@ body{
             .main-nav{
                 @include row;
                 flex-wrap: wrap;
+                justify-content: space-around;
                 list-style: none;
                 color: $color-white;
             }
